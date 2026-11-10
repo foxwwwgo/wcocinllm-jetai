@@ -1,0 +1,52 @@
+{
+  "status": "verified",
+  "rows": 8400,
+  "functions": {
+    "strict": "parse_strict",
+    "evaluation": "parse_v71",
+    "compatibility": "parse"
+  },
+  "accepted_seats": {
+    "strict": 501,
+    "evaluation": 877,
+    "compatibility": 2842
+  },
+  "by_task_model": {
+    "commonsenseqa:granite": {
+      "strict": 421,
+      "evaluation": 441,
+      "compatibility": 673
+    },
+    "commonsenseqa:phi": {
+      "strict": 53,
+      "evaluation": 54,
+      "compatibility": 516
+    },
+    "gsm8k:granite": {
+      "strict": 8,
+      "evaluation": 192,
+      "compatibility": 621
+    },
+    "gsm8k:phi": {
+      "strict": 19,
+      "evaluation": 190,
+      "compatibility": 1032
+    }
+  },
+  "sha256": {
+    "data/parser_outputs.jsonl.gz": "61415021bf2dafec9e036ca248dbcd1f5b4c071ff0596bda3daa5b6155bb1df8",
+    "analysis/frozen_parsers.py": "cbdba645278f96e5f12edcb52f7812a24225b335eeedb56eae1feb58e60dd996"
+  },
+  "historical_aliases": {
+    "original_answer": "evaluation",
+    "original_answers": "evaluation",
+    "accepted_original": "evaluation",
+    "added_original": "evaluation",
+    "replication_original": "evaluation",
+    "replication_original_parser": "evaluation",
+    "strict_answers": "strict",
+    "extended_answer": "compatibility",
+    "extended_answers": "compatibility"
+  },
+  "scope": "Parser-name verification on unchanged recorded outputs; no new generation, scoring, policy selection or accuracy analysis."
+}

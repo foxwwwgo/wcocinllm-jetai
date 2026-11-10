@@ -1,0 +1,21 @@
+{
+  "status": "verified",
+  "model_question_records": 1800,
+  "distinct_questions": 600,
+  "deterministic_readouts": "independent standard-library replay passed",
+  "frozen_primary_statistics": "recomputed and matched",
+  "decision": {
+    "H1_independently_supported": true,
+    "H2_positive_and_adjusted_significant": false,
+    "retention_at_least_75_percent": true,
+    "positive_H2_cells": 3,
+    "positive_H2_covers_each_model": true,
+    "positive_H2_covers_both_tasks": false,
+    "H2_at_least_20_nonzero_questions": false,
+    "joint_gate_claim_supported": false
+  },
+  "between_batch_contrasts": "recomputed and matched",
+  "two_batch_average": "descriptive, recomputed and matched",
+  "score_quality_cells": 6,
+  "partial_data_used": false
+}

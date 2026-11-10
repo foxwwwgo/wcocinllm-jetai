@@ -1,0 +1,176 @@
+{
+  "status": "retrospective descriptive diagnostics",
+  "source_sha256": "0cd0737fe7dcd9255045a93175a83a1a667cafe4348d1ece248199a780dfd58a",
+  "selection_salt": "ida-v10.7-review-20261023",
+  "selection_rule": "Lowest SHA256(salt:category:id:model) within W64 correction, W64 harm, and multiclass W64-certified-preservation strata. No ranking by effect size.",
+  "summary": {
+    "records": 1800,
+    "single_class": 1591,
+    "multiple_class": 209,
+    "constant_scores": 1132,
+    "constant_scores_multiple_class": 27,
+    "by_beta": {
+      "4": {
+        "certified": 1723,
+        "certified_multiple_class": 132,
+        "actual_overrides": 5,
+        "uncertified_but_preserved": 72
+      },
+      "64": {
+        "certified": 1617,
+        "certified_multiple_class": 26,
+        "actual_overrides": 24,
+        "uncertified_but_preserved": 159
+      }
+    }
+  },
+  "examples": {
+    "correction": {
+      "id": "csqa-a0f5414bf98e094f4d807abee28861a4",
+      "model": "glm",
+      "task": "commonsenseqa",
+      "class_count": 2,
+      "counts": {
+        "B": 5,
+        "C": 2
+      },
+      "span": 0.09999999999999998,
+      "constant_scores": false,
+      "certificate": {
+        "4": true,
+        "64": false
+      },
+      "majority": "B",
+      "gold": "C",
+      "answers": [
+        "B",
+        "C",
+        "B",
+        "B",
+        "C",
+        "B",
+        "B"
+      ],
+      "scores": [
+        85.0,
+        85.0,
+        85.0,
+        85.0,
+        95.0,
+        85.0,
+        85.0
+      ],
+      "W4": "B",
+      "W64": "C",
+      "eligible_records": 5,
+      "class_weights": {
+        "4": {
+          "B": 3.351600230178197,
+          "C": 1.6703200460356393
+        },
+        "64": {
+          "B": 0.008307786365869669,
+          "C": 1.001661557273174
+        }
+      }
+    },
+    "harm": {
+      "id": "csqa-cce13a32fedb997c017d3fac87c34912",
+      "model": "glm",
+      "task": "commonsenseqa",
+      "class_count": 2,
+      "counts": {
+        "D": 3,
+        "B": 4
+      },
+      "span": 0.09999999999999998,
+      "constant_scores": false,
+      "certificate": {
+        "4": false,
+        "64": false
+      },
+      "majority": "B",
+      "gold": "B",
+      "answers": [
+        "D",
+        "D",
+        "B",
+        "B",
+        "B",
+        "D",
+        "B"
+      ],
+      "scores": [
+        95.0,
+        85.0,
+        85.0,
+        85.0,
+        85.0,
+        85.0,
+        85.0
+      ],
+      "W4": "B",
+      "W64": "D",
+      "eligible_records": 13,
+      "class_weights": {
+        "4": {
+          "D": 2.3406400920712787,
+          "B": 2.6812801841425573
+        },
+        "64": {
+          "D": 1.003323114546348,
+          "B": 0.006646229092695736
+        }
+      }
+    },
+    "preserved": {
+      "id": "csqa-63cf1adb5fe302b9867ead8bc8103d0b",
+      "model": "deepseek",
+      "task": "commonsenseqa",
+      "class_count": 2,
+      "counts": {
+        "D": 5,
+        "E": 2
+      },
+      "span": 0.0,
+      "constant_scores": true,
+      "certificate": {
+        "4": true,
+        "64": true
+      },
+      "majority": "D",
+      "gold": "D",
+      "answers": [
+        "D",
+        "D",
+        "E",
+        "D",
+        "D",
+        "D",
+        "E"
+      ],
+      "scores": [
+        85.0,
+        85.0,
+        85.0,
+        85.0,
+        85.0,
+        85.0,
+        85.0
+      ],
+      "W4": "D",
+      "W64": "D",
+      "eligible_records": 26,
+      "class_weights": {
+        "4": {
+          "D": 5.0,
+          "E": 2.0
+        },
+        "64": {
+          "D": 5.0,
+          "E": 2.0
+        }
+      }
+    }
+  }
+}

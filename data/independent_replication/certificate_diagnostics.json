@@ -1,0 +1,112 @@
+[
+  {
+    "task": "gsm8k",
+    "model": "deepseek",
+    "beta": 4,
+    "single_class": 289,
+    "multiclass": 11,
+    "certified_multiclass": 10,
+    "uncertified_preserved": 1
+  },
+  {
+    "task": "gsm8k",
+    "model": "deepseek",
+    "beta": 64,
+    "single_class": 289,
+    "multiclass": 11,
+    "certified_multiclass": 3,
+    "uncertified_preserved": 8
+  },
+  {
+    "task": "gsm8k",
+    "model": "qwen",
+    "beta": 4,
+    "single_class": 290,
+    "multiclass": 10,
+    "certified_multiclass": 8,
+    "uncertified_preserved": 2
+  },
+  {
+    "task": "gsm8k",
+    "model": "qwen",
+    "beta": 64,
+    "single_class": 290,
+    "multiclass": 10,
+    "certified_multiclass": 2,
+    "uncertified_preserved": 8
+  },
+  {
+    "task": "gsm8k",
+    "model": "glm",
+    "beta": 4,
+    "single_class": 275,
+    "multiclass": 25,
+    "certified_multiclass": 18,
+    "uncertified_preserved": 7
+  },
+  {
+    "task": "gsm8k",
+    "model": "glm",
+    "beta": 64,
+    "single_class": 275,
+    "multiclass": 25,
+    "certified_multiclass": 7,
+    "uncertified_preserved": 17
+  },
+  {
+    "task": "commonsenseqa",
+    "model": "deepseek",
+    "beta": 4,
+    "single_class": 228,
+    "multiclass": 72,
+    "certified_multiclass": 49,
+    "uncertified_preserved": 20
+  },
+  {
+    "task": "commonsenseqa",
+    "model": "deepseek",
+    "beta": 64,
+    "single_class": 228,
+    "multiclass": 72,
+    "certified_multiclass": 10,
+    "uncertified_preserved": 53
+  },
+  {
+    "task": "commonsenseqa",
+    "model": "qwen",
+    "beta": 4,
+    "single_class": 277,
+    "multiclass": 23,
+    "certified_multiclass": 19,
+    "uncertified_preserved": 4
+  },
+  {
+    "task": "commonsenseqa",
+    "model": "qwen",
+    "beta": 64,
+    "single_class": 277,
+    "multiclass": 23,
+    "certified_multiclass": 3,
+    "uncertified_preserved": 15
+  },
+  {
+    "task": "commonsenseqa",
+    "model": "glm",
+    "beta": 4,
+    "single_class": 228,
+    "multiclass": 72,
+    "certified_multiclass": 38,
+    "uncertified_preserved": 28,
+    "incomplete_scores": 1
+  },
+  {
+    "task": "commonsenseqa",
+    "model": "glm",
+    "beta": 64,
+    "single_class": 228,
+    "multiclass": 72,
+    "certified_multiclass": 1,
+    "uncertified_preserved": 59,
+    "incomplete_scores": 1
+  }
+]

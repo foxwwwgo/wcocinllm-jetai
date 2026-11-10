@@ -1,0 +1,46 @@
+{
+  "initial": {
+    "requests": 39182,
+    "kinds": {
+      "generation": 19600,
+      "confidence": 19582
+    },
+    "response_body_bytes": 32299269,
+    "compressed_bytes": 30289943,
+    "sha256": "2befbec12023c32ec3646f17adc72e120768d36c2b478dd45572ee026e4fb688",
+    "complete_body_hashes_verified": true,
+    "authentication_headers_included": false
+  },
+  "cisc": {
+    "requests": 14700,
+    "kinds": {
+      "verbal": 4900,
+      "ptrue": 4900,
+      "generation": 4900
+    },
+    "response_body_bytes": 15891591,
+    "compressed_bytes": 11332608,
+    "sha256": "205b7708133598025d4500bc6de324a734abdb93bfa13784268497d98e97967c",
+    "complete_body_hashes_verified": true,
+    "authentication_headers_included": false
+  },
+  "independent_generation": {
+    "requests": 25193,
+    "kinds": {
+      "deepseek:confidence": 4200,
+      "deepseek:generation": 4200,
+      "glm:confidence": 4194,
+      "glm:generation": 4200,
+      "qwen:confidence": 4199,
+      "qwen:generation": 4200
+    },
+    "response_body_bytes": 18686880,
+    "response_body_count": 25237,
+    "compressed_bytes": 18130962,
+    "sha256": "a7e61d52650942a7c80dd94e3f13168fe5fadc320548876a93041e336bddc727",
+    "complete_body_hashes_verified": true,
+    "authentication_headers_included": false,
+    "archived_request_epochs_retained": 5,
+    "logical_requests_distinct_from_transport_attempts": true
+  }
+}

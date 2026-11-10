@@ -1,0 +1,12 @@
+{
+  "event": "resume_after_user_confirmed_recharge",
+  "resume_start": {
+    "utc": "2026-10-24T13:27:25.792833+00:00",
+    "freeze_sha256": "371dc2f86a6507544fb045ab49de01d7e7e5b42293ab6a7c86ce74b08c974577",
+    "pid": 45204
+  },
+  "frozen_scheme_unchanged": true,
+  "prior_successful_seats_reused": 6,
+  "prior_denials_archived": 4,
+  "model": "deepseek-v4-flash"
+}

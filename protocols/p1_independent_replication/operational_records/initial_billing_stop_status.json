@@ -1,0 +1,16 @@
+{
+  "state": "awaiting_deepseek_balance",
+  "batch": "ida-p1-independent-20261024",
+  "utc": "2026-10-24T13:09:14.934346+00:00",
+  "candidate_seats_completed": {
+    "deepseek": 0,
+    "qwen": 4,
+    "glm": 2
+  },
+  "candidate_seats_per_model": 4200,
+  "reason": "provider deepseek: HTTP 402; no further scheduling",
+  "operational_resume_note": "protocols/operational_resume_20261024.md",
+  "failed_transport_archives": "results/billing_interruption.json",
+  "completed_candidate_seats_preserved": 6,
+  "original_frozen_files_unchanged": true
+}

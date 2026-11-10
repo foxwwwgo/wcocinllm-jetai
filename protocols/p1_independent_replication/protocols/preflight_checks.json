@@ -1,0 +1,7 @@
+{
+  "unique_questions": 600,
+  "new_batch_changes_request_identity": true,
+  "full_answer_preserved_in_scoring": true,
+  "requested_deepseek_model": "deepseek-v4-flash",
+  "model_calls_made": 0
+}

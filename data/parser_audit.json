@@ -1,0 +1,41 @@
+{
+  "status": "verified",
+  "rows": 8400,
+  "source_sha256": "61415021bf2dafec9e036ca248dbcd1f5b4c071ff0596bda3daa5b6155bb1df8",
+  "category_counts": {
+    "accepted_original": 877,
+    "answer_marker_not_accepted": 3691,
+    "no_accepted_answer_marker": 1867,
+    "accepted_compatibility_only": 1965
+  },
+  "by_cell": {
+    "commonsenseqa:granite": {
+      "accepted_original": 441,
+      "answer_marker_not_accepted": 842,
+      "no_accepted_answer_marker": 585,
+      "accepted_compatibility_only": 232
+    },
+    "commonsenseqa:phi": {
+      "no_accepted_answer_marker": 601,
+      "accepted_compatibility_only": 462,
+      "answer_marker_not_accepted": 983,
+      "accepted_original": 54
+    },
+    "gsm8k:granite": {
+      "answer_marker_not_accepted": 1234,
+      "accepted_original": 192,
+      "no_accepted_answer_marker": 245,
+      "accepted_compatibility_only": 429
+    },
+    "gsm8k:phi": {
+      "accepted_compatibility_only": 842,
+      "answer_marker_not_accepted": 632,
+      "no_accepted_answer_marker": 436,
+      "accepted_original": 190
+    }
+  },
+  "boundary_tests": 20,
+  "sample_n": 80,
+  "selection_salt": "ida-v10.7-review-20261023",
+  "scope": "Retrospective syntax census; categories do not determine mathematical correctness. Original and compatibility outputs match frozen records exactly."
+}

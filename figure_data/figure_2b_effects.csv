@@ -1,0 +1,4 @@
+contrast,effect_pp,ci95_lower_pp,ci95_upper_pp,independent_question_clusters,interval_source
+H1_harm_W64_minus_W4,0.5555555555555556,0.2222222222222222,0.9444444444444444,600,recomputed question-cluster bootstrap
+H2_accuracy_G64_minus_W64,0.22222222222222227,-0.055555555555555566,0.5555555555555555,600,recomputed question-cluster bootstrap
+accuracy_G64_minus_M,-0.2222222222222222,-0.611111111111111,0.11111111111111113,600,recomputed question-cluster bootstrap

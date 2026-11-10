@@ -1,0 +1,11 @@
+{
+  "scope": "8400 complete added-model evaluation generation texts, no request bodies, prompts, headers, keys, or reference answers added. Model responses can paraphrase benchmark content; underlying terms remain applicable.",
+  "source_files": {
+    "src/v7_core.py": "8e71d0b2ccde2d084182c5d7114b292917b6178cd124cfc1178df24ce07335be",
+    "src/experiment.py": "16d9296ec2a42bbb287944653efc78c4715d918eabef3d816910b9213ea11afc"
+  },
+  "parser_changes": "Function core.parse renamed parse_strict; import reference changed; body logic unchanged. Original policy retained.",
+  "verified_http_body_files": 8400,
+  "outputs": 8400,
+  "output_text_bytes": 5333173
+}

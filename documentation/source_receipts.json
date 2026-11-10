@@ -1,0 +1,146 @@
+[
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "main.tex",
+    "release_file": "documentation/manuscript/main.tex",
+    "source_sha256": "c82329627025f4daebd3d5de0f94572a621747f9e03322c94bbc8f1d4d07fb34"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "supplement.tex",
+    "release_file": "documentation/manuscript/supplement.tex",
+    "source_sha256": "8825d358a539c315e3244e6f125cf9ba6490bdac341bc16e6e051cc305793425"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "preamble.tex",
+    "release_file": "documentation/manuscript/preamble.tex",
+    "source_sha256": "59d3b8d42d77fd0db5e34e63b07362bcad24bd5f5424864767287c0802108287"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "references.bib",
+    "release_file": "documentation/manuscript/references.bib",
+    "source_sha256": "a136f2276d75448be8d678790c020f7a32c8421d250ee78aae138c8668351055"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "references_vancouver.tex",
+    "release_file": "documentation/manuscript/references_vancouver.tex",
+    "source_sha256": "75bd2e4b4405eed20f361865e68474145bc48d3a56d6c0c02f69298233236a9b"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "references_supplement.tex",
+    "release_file": "documentation/manuscript/references_supplement.tex",
+    "source_sha256": "881b4ba701f30ab2b356457679b5b8ab396a85821053e09b184253d839ffafde"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/abstract.tex",
+    "release_file": "documentation/manuscript/sections/abstract.tex",
+    "source_sha256": "8cb8060161d73a6085c227b1004623915447243b727610b115c398a44483562e"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/conclusion.tex",
+    "release_file": "documentation/manuscript/sections/conclusion.tex",
+    "source_sha256": "f78f6c81833c25ef5fd9b210252db4c810a27c34df54586bca9b7fcd6688a1ff"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/declarations.tex",
+    "release_file": "documentation/manuscript/sections/declarations.tex",
+    "source_sha256": "2562a4315baf3da760b698af9e69f4b5e615b431203b5f7d908a828c81d486d9"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/discussion.tex",
+    "release_file": "documentation/manuscript/sections/discussion.tex",
+    "source_sha256": "70c4ec6c39a524b8e72d2a1c585b0074842759db2ca3048430e99ca4f18e3c06"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/experiments.tex",
+    "release_file": "documentation/manuscript/sections/experiments.tex",
+    "source_sha256": "bd2341dd1240df6796fab8c9d2fdba6f50add9d07077d0db9d3360b8e240d34a"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/followup_development.tex",
+    "release_file": "documentation/manuscript/sections/followup_development.tex",
+    "source_sha256": "e3dd9ecb5bb25e76e87cb56bc435274a75bc82b6345c1bd243157483fb38c559"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/followup_replication.tex",
+    "release_file": "documentation/manuscript/sections/followup_replication.tex",
+    "source_sha256": "93ef6db16bea43c196863cf66a00ec46f1599fa33a751596232f231f58c37142"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/followup_replication_table.tex",
+    "release_file": "documentation/manuscript/sections/followup_replication_table.tex",
+    "source_sha256": "a78d4377cb55bc2cafef23e05e7c072e704b3ca5e56056127c7d35408550b134"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/introduction.tex",
+    "release_file": "documentation/manuscript/sections/introduction.tex",
+    "source_sha256": "a759ac6f45c57d7d542ff93a9081aec0370b852c2fb8dc53c45b12b4ec21d7b9"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/methods.tex",
+    "release_file": "documentation/manuscript/sections/methods.tex",
+    "source_sha256": "c86bd8cd4571755b8494ecea29998e0778e63c0c04652e0a80e7ee6dc07d341b"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/related.tex",
+    "release_file": "documentation/manuscript/sections/related.tex",
+    "source_sha256": "2a54fedbeb9b32ac90247e39241ce8db6f23062e983184a5a6e0016fbc173a24"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/study_overview.tex",
+    "release_file": "documentation/manuscript/sections/study_overview.tex",
+    "source_sha256": "950f75bd7413fac19c55661a9069e9cb783f0f85846cc4512a047c5499d48b05"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "sections/theory.tex",
+    "release_file": "documentation/manuscript/sections/theory.tex",
+    "source_sha256": "e11fd39f775ba0b035a3d9124e618fd258be90975806755590fd97c35b53f595"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "supplement/cisc.tex",
+    "release_file": "documentation/manuscript/supplement/cisc.tex",
+    "source_sha256": "91116315e9555de15988083e2f09eca92ac13210daa3d4a0242b58e3a9ea6262"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "supplement/diagnostics.tex",
+    "release_file": "documentation/manuscript/supplement/diagnostics.tex",
+    "source_sha256": "a6ea3f7c6114b55a9976d09eabd685907c1a5c0d1e3a5601301f946c0d0771de"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "supplement/proofs.tex",
+    "release_file": "documentation/manuscript/supplement/proofs.tex",
+    "source_sha256": "fd131dc9af83cacbc60d1a8a3a27bc8987635690fb4528abcd48a599ecaf80e1"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "supplement/protocol.tex",
+    "release_file": "documentation/manuscript/supplement/protocol.tex",
+    "source_sha256": "79fb71a7bec0fc6914cb5299106b6706beabde5079a54d5431a981bac00eab67"
+  },
+  {
+    "source_project": "IDA_Submission_v10_19",
+    "source_relative_file": "supplement/wqd.tex",
+    "release_file": "documentation/manuscript/supplement/wqd.tex",
+    "source_sha256": "8822c1a48694f7251828dc71397160121edec8e47949b5b012c66751d28e475c"
+  }
+]

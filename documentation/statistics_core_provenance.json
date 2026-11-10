@@ -1,0 +1,11 @@
+{
+  "source": "Neurocomputing_Mechanism_v7/src/analyze.py",
+  "source_sha256": "6790d551a02d4b9d63c1366696c6624a3aa6b32ddcf3c2d9d8522657d424469b",
+  "extracted_functions": [
+    "permuted_accuracy",
+    "pooled",
+    "summarize"
+  ],
+  "changes": "Imports and I/O removed; numerical function bodies unchanged. Companion entry point recomputes and then compares archived results.",
+  "archived_summary_not_used_for_estimation": true
+}

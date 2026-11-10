@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-24T15:53:39.525980+00:00",
+  "python": "3.11.5",
+  "system": "Darwin",
+  "architecture": "x86_64",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1"
+  },
+  "scope": "Runtime selected for the offline statistical and figure pipeline; no host name, credentials or home directory are recorded."
+}

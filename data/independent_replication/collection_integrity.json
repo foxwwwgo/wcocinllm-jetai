@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "candidate_seats": 12600,
+  "complete_response_to_confidence_links": 12593,
+  "request_identity_hashes": 25193,
+  "response_body_hashes": 25232,
+  "source_batch_cache_overlap": 0,
+  "duplicate_nonempty_response_ids": 0,
+  "frozen_file_hashes": 13,
+  "partial_correctness_examined": false,
+  "scope": "Executed only after completed collection; independent cache identity, untruncated confidence inputs, parser outputs and model/seat linkage."
+}

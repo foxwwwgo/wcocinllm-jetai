@@ -1,0 +1,355 @@
+{
+  "manuscript_version": "10.14",
+  "checked_on": "2026-10-23",
+  "previous_cited_references": 25,
+  "added_references": 11,
+  "current_cited_references": 37,
+  "scope": "Prior publication checks retained; current main numbering and five-item supplement bibliography resolved. WQD Definition 6.1 checked directly on 25 October 2026.",
+  "records": [
+    {
+      "key": "kittler1998",
+      "manuscript_reference_number": 4,
+      "author": "Kittler, Josef and Hatef, Mohamad and Duin, Robert P. W. and Matas, Jiri",
+      "title": "On combining classifiers",
+      "year": 1998,
+      "publication": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "status": "formally published",
+      "primary_source_url": "https://ieeexplore.ieee.org/abstract/document/667881/",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Classifier combination",
+      "supported_context": "Voting and continuous-score combination; sensitivity to score estimation.",
+      "scope_distinction": "Provides historical context, not an experimental validation of this manuscript\u2019s intervention.",
+      "manuscript_locations": [
+        "Section 2"
+      ],
+      "checked_on": "2026-10-23",
+      "volume": "20",
+      "number": 4,
+      "pages": "226--239",
+      "doi": "10.1109/34.667881",
+      "additional_primary_source": "https://cmp.felk.cvut.cz/~matas/papers/kittler-pami98.pdf"
+    },
+    {
+      "key": "kuncheva2003",
+      "manuscript_reference_number": 5,
+      "author": "Kuncheva, Ludmila I. and Whitaker, Christopher J.",
+      "title": "Measures of diversity in classifier ensembles and their relationship with the ensemble accuracy",
+      "year": 2003,
+      "publication": "Machine Learning",
+      "status": "formally published",
+      "primary_source_url": "https://link.springer.com/article/10.1023/A:1022859003006",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Ensemble diversity",
+      "supported_context": "Disagreement and coincident errors in classifier ensembles; context-dependent links to accuracy.",
+      "scope_distinction": "No claim that diverse samples are independent or automatically improve accuracy.",
+      "manuscript_locations": [
+        "Section 2"
+      ],
+      "checked_on": "2026-10-23",
+      "volume": "51",
+      "number": 5,
+      "pages": "181--207",
+      "doi": "10.1023/A:1022859003006"
+    },
+    {
+      "key": "lightman2024",
+      "manuscript_reference_number": 7,
+      "author": "Lightman, Hunter and Kosaraju, Vineet and Burda, Yuri and Edwards, Harrison and Baker, Bowen and Lee, Teddy and Leike, Jan and Schulman, John and Sutskever, Ilya and Cobbe, Karl",
+      "title": "Let's verify step by step",
+      "year": 2024,
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "status": "formally published",
+      "primary_source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/aca97732e30bcf1303bc22ac3924fd16-Abstract-Conference.html",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Verification and process supervision",
+      "supported_context": "Learned evaluation signals for candidate reasoning solutions.",
+      "scope_distinction": "The present study does not test process-supervised verifiers.",
+      "manuscript_locations": [
+        "Section 2",
+        "Section 6"
+      ],
+      "checked_on": "2026-10-23",
+      "publisher": "OpenReview.net",
+      "name_source_note": "Author names follow the official ICLR proceedings metadata (Yuri Burda; Harrison Edwards)."
+    },
+    {
+      "key": "jiang2021",
+      "manuscript_reference_number": 13,
+      "author": "Jiang, Zhengbao and Araki, Jun and Ding, Haibo and Neubig, Graham",
+      "title": "How can we know when language models know? On the calibration of language models for question answering",
+      "year": 2021,
+      "publication": "Transactions of the Association for Computational Linguistics",
+      "status": "formally published",
+      "primary_source_url": "https://aclanthology.org/2021.tacl-1.57/",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Language-model calibration",
+      "supported_context": "Calibration of language-model probabilities for question answering.",
+      "scope_distinction": "Calibration quality is distinguished from the paired decision utility assessed here.",
+      "manuscript_locations": [
+        "Section 2"
+      ],
+      "checked_on": "2026-10-23",
+      "volume": "9",
+      "pages": "962--977",
+      "doi": "10.1162/tacl_a_00407"
+    },
+    {
+      "key": "lyu2025",
+      "manuscript_reference_number": 17,
+      "author": "Lyu, Qing and Shridhar, Kumar and Malaviya, Chaitanya and Zhang, Li and Elazar, Yanai and Tandon, Niket and Apidianaki, Marianna and Sachan, Mrinmaya and Callison-Burch, Chris",
+      "title": "Calibrating large language models with sample consistency",
+      "year": 2025,
+      "publication": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "status": "formally published",
+      "primary_source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/34120",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Sample-consistency calibration",
+      "supported_context": "Confidence constructed from distributions of repeated generations.",
+      "scope_distinction": "No claim that consistency-based calibration and self-rating are the same signal.",
+      "manuscript_locations": [
+        "Section 2"
+      ],
+      "checked_on": "2026-10-23",
+      "volume": "39",
+      "number": 15,
+      "pages": "19260--19268",
+      "doi": "10.1609/aaai.v39i18.34120"
+    },
+    {
+      "key": "xiao2025",
+      "manuscript_reference_number": 18,
+      "author": "Xiao, Quan and Bhattacharjya, Debarun and Ganesan, Balaji and Marinescu, Radu and Mirylenka, Katya and Pham, Nhan H. and Glass, Michael and Lee, Junkyu",
+      "title": "The consistency hypothesis in uncertainty quantification for large language models",
+      "year": 2025,
+      "publication": "Proceedings of the Forty-first Conference on Uncertainty in Artificial Intelligence",
+      "status": "formally published",
+      "primary_source_url": "https://proceedings.mlr.press/v286/xiao25a.html",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Consistency and uncertainty",
+      "supported_context": "Formal consistency hypotheses linking generation agreement to confidence.",
+      "scope_distinction": "The paper\u2019s hypotheses are not treated as assumptions proved by this study.",
+      "manuscript_locations": [
+        "Section 2"
+      ],
+      "checked_on": "2026-10-23",
+      "volume": "286",
+      "pages": "4636--4651",
+      "publisher": "PMLR"
+    },
+    {
+      "key": "huang2024",
+      "manuscript_reference_number": 20,
+      "author": "Huang, Jie and Chen, Xinyun and Mishra, Swaroop and Zheng, Huaixiu Steven and Yu, Adams Wei and Song, Xinying and Zhou, Denny",
+      "title": "Large language models cannot self-correct reasoning yet",
+      "year": 2024,
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "status": "formally published",
+      "primary_source_url": "https://openreview.net/forum?id=IkmD3fKBPQ",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Intrinsic self-correction",
+      "supported_context": "Reasoning revision can change initially correct and initially incorrect answers.",
+      "scope_distinction": "The reference is not used to claim that every self-correction method fails.",
+      "manuscript_locations": [
+        "Section 2",
+        "Section 6"
+      ],
+      "checked_on": "2026-10-23",
+      "publisher": "OpenReview.net",
+      "additional_primary_source": "https://openreview.net/notes/edits/attachment?id=icEN6taw1x&name=pdf"
+    },
+    {
+      "key": "thirukovalluru2024",
+      "manuscript_reference_number": 22,
+      "author": "Thirukovalluru, Raghuveer and Huang, Yukun and Dhingra, Bhuwan",
+      "title": "Atomic self-consistency for better long form generations",
+      "year": 2024,
+      "publication": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+      "status": "formally published",
+      "primary_source_url": "https://aclanthology.org/2024.emnlp-main.706/",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Composite-answer generation",
+      "supported_context": "Combining subparts of sampled responses to form long-form composite answers.",
+      "scope_distinction": "The fixed-pool recovery bound is not extended to procedures that generate new answers.",
+      "manuscript_locations": [
+        "Section 2",
+        "Section 6"
+      ],
+      "checked_on": "2026-10-23",
+      "pages": "12681--12694",
+      "doi": "10.18653/v1/2024.emnlp-main.706",
+      "publisher": "Association for Computational Linguistics"
+    },
+    {
+      "key": "sclar2024",
+      "manuscript_reference_number": 25,
+      "author": "Sclar, Melanie and Choi, Yejin and Tsvetkov, Yulia and Suhr, Alane",
+      "title": "Quantifying language models' sensitivity to spurious features in prompt design or: How {I} learned to start worrying about prompt formatting",
+      "year": 2024,
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "status": "formally published",
+      "primary_source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6c0e99d736da621403018ca7b32b1a4d-Abstract-Conference.html",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Input-format sensitivity",
+      "supported_context": "Model-performance sensitivity to prompt formatting.",
+      "scope_distinction": "Input-format sensitivity is context; the present fixed-generation comparison concerns output parsing.",
+      "manuscript_locations": [
+        "Section 2",
+        "Section 6"
+      ],
+      "checked_on": "2026-10-23",
+      "publisher": "OpenReview.net"
+    },
+    {
+      "key": "pezeshkpour2024",
+      "manuscript_reference_number": 26,
+      "author": "Pezeshkpour, Pouya and Hruschka, Estevam",
+      "title": "Large language models sensitivity to the order of options in multiple-choice questions",
+      "year": 2024,
+      "publication": "Findings of the Association for Computational Linguistics: NAACL 2024",
+      "status": "formally published",
+      "primary_source_url": "https://aclanthology.org/2024.findings-naacl.130/",
+      "verified_fields": [
+        "author order",
+        "title",
+        "publication venue",
+        "year",
+        "volume/issue/pages where assigned",
+        "DOI or official proceedings URL"
+      ],
+      "topic": "Option-order sensitivity",
+      "supported_context": "Performance changes under multiple-choice option ordering.",
+      "scope_distinction": "Option ordering is not asserted to be the same mechanism as output compatibility.",
+      "manuscript_locations": [
+        "Section 2",
+        "Section 6"
+      ],
+      "checked_on": "2026-10-23",
+      "pages": "2006--2017",
+      "doi": "10.18653/v1/2024.findings-naacl.130",
+      "publisher": "Association for Computational Linguistics"
+    },
+    {
+      "key": "petullo2026veccisc",
+      "manuscript_reference_number": 8,
+      "author": "Petullo, James and George, Sonny and Cashman, Dylan and Xue, Nianwen",
+      "title": "{VecCISC}: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection",
+      "year": 2026,
+      "publication": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "status": "formally published",
+      "primary_source_url": "https://aclanthology.org/2026.findings-acl.1305/",
+      "verified_fields": [
+        "author order",
+        "title",
+        "venue",
+        "year",
+        "pages",
+        "DOI"
+      ],
+      "topic": "Candidate filtering and confidence-informed aggregation",
+      "supported_context": "Semantic filtering of reasoning traces before confidence scoring changes the candidate pool.",
+      "scope_distinction": "Related candidate-selection method, not a new benchmark result or fixed-pool concentration intervention.",
+      "manuscript_locations": [
+        "Section 2",
+        "Section 6"
+      ],
+      "checked_on": "2026-10-24",
+      "pages": "26184--26200",
+      "doi": "10.18653/v1/2026.findings-acl.1305"
+    },
+    {
+      "key": "chen2023usc",
+      "title": "Universal Self-Consistency for Large Language Model Generation",
+      "authors": "Chen, Xinyun and Aksitov, Renat and Alon, Uri and Ren, Jie and Xiao, Kefan and Yin, Pengcheng and Prakash, Sushant and Sutton, Charles and Wang, Xuezhi and Zhou, Denny",
+      "year": "2023",
+      "publication": "arXiv:2311.17311",
+      "category": "preprint_or_technical_report",
+      "existence_verified": true,
+      "checked_on": "2026-10-24",
+      "primary_evidence_urls": [
+        "https://arxiv.org/abs/2311.17311"
+      ],
+      "number": 11,
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 7,
+          "part": "body"
+        }
+      ],
+      "manuscript_reference_number": 11,
+      "status": "preprint",
+      "primary_source_url": "https://arxiv.org/abs/2311.17311"
+    }
+  ],
+  "citation_numbers_checked_on": "2026-10-25",
+  "applies_to_version": "10.19",
+  "current_reference_changes": "None; source and formatted entries retained, citation coverage rechecked.",
+  "v10_17_note": "Bibliography and citations unchanged from v10.16.",
+  "v10_18_note": "Reference metadata, citation keys and reference lists are byte-identical to v10.17; this language edit performs no new bibliographic lookup.",
+  "v10_19_note": "Reference metadata, citation keys and reference lists are byte-identical to v10.18. No new bibliographic lookup in this revision."
+}

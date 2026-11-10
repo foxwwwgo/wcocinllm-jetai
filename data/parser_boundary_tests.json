@@ -1,0 +1,167 @@
+[
+  {
+    "name": "strict letter",
+    "task": "commonsenseqa",
+    "text": "Reasoning. Proposed answer: (B)",
+    "strict": "B",
+    "original": "B",
+    "compatibility": "B"
+  },
+  {
+    "name": "signed integer",
+    "task": "gsm8k",
+    "text": "Proposed answer: (-1,234)",
+    "strict": "-1234",
+    "original": "-1234",
+    "compatibility": "-1234"
+  },
+  {
+    "name": "last unparenthesized",
+    "task": "commonsenseqa",
+    "text": "Reasoning\n**Proposed answer: C**",
+    "strict": null,
+    "original": "C",
+    "compatibility": "C"
+  },
+  {
+    "name": "compatibility final",
+    "task": "gsm8k",
+    "text": "Reasoning\nFinal answer: (12)",
+    "strict": null,
+    "original": null,
+    "compatibility": "12"
+  },
+  {
+    "name": "compatibility answer",
+    "task": "commonsenseqa",
+    "text": "Reasoning\nAnswer: E.",
+    "strict": null,
+    "original": null,
+    "compatibility": "E"
+  },
+  {
+    "name": "compatibility X",
+    "task": "gsm8k",
+    "text": "Reasoning\n(X = 24).",
+    "strict": null,
+    "original": null,
+    "compatibility": "24"
+  },
+  {
+    "name": "unlabeled X",
+    "task": "gsm8k",
+    "text": "Reasoning\nX = 24",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "units after answer",
+    "task": "gsm8k",
+    "text": "Final answer: 24 miles",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "prose after option",
+    "task": "commonsenseqa",
+    "text": "Answer: B because it is appropriate.",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "two explicit strict matches",
+    "task": "commonsenseqa",
+    "text": "Proposed answer: (A)\nProposed answer: (B)\nFurther explanation",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "terminal fallback after two matches",
+    "task": "commonsenseqa",
+    "text": "Proposed answer: (A)\nProposed answer: (B)",
+    "strict": null,
+    "original": "B",
+    "compatibility": "B"
+  },
+  {
+    "name": "unique strict followed by prose",
+    "task": "commonsenseqa",
+    "text": "Proposed answer: (D)\nFurther explanation",
+    "strict": "D",
+    "original": "D",
+    "compatibility": "D"
+  },
+  {
+    "name": "outside option set",
+    "task": "commonsenseqa",
+    "text": "Answer: F",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "decimal not integer",
+    "task": "gsm8k",
+    "text": "Answer: 1.5",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "empty",
+    "task": "gsm8k",
+    "text": "",
+    "strict": null,
+    "original": null,
+    "compatibility": null
+  },
+  {
+    "name": "length finish",
+    "task": "gsm8k",
+    "text": "Proposed answer: (3)",
+    "strict": null,
+    "original": null,
+    "compatibility": null,
+    "finish_reason": "length"
+  },
+  {
+    "name": "failed HTTP",
+    "task": "gsm8k",
+    "text": "Proposed answer: (3)",
+    "strict": null,
+    "original": null,
+    "compatibility": null,
+    "http_status": 500
+  },
+  {
+    "name": "confidence single",
+    "task": "gsm8k",
+    "text": "95.0",
+    "strict": 95.0,
+    "original": 95.0,
+    "compatibility": 95.0,
+    "kind": "confidence"
+  },
+  {
+    "name": "confidence commentary",
+    "task": "gsm8k",
+    "text": "Confidence: 95",
+    "strict": null,
+    "original": null,
+    "compatibility": null,
+    "kind": "confidence"
+  },
+  {
+    "name": "confidence outside range",
+    "task": "gsm8k",
+    "text": "101",
+    "strict": null,
+    "original": null,
+    "compatibility": null,
+    "kind": "confidence"
+  }
+]

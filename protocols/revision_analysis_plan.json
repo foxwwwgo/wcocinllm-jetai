@@ -1,0 +1,30 @@
+{
+  "version": "10.7",
+  "created_utc": "2026-10-23T14:28:02.267689+00:00",
+  "status": "retrospective revision analysis, not a prospective experiment",
+  "immutable_inputs": "v10.6 parsed data and original frozen v7/v8 raw responses; no API calls or policy refitting",
+  "primary_inference": "recompute the frozen tests and 10000-draw question-cluster intervals from parsed rows, retain original seeds and order; compare all estimates with archived results",
+  "new_diagnostics": [
+    "leave-one-hosted-model-out H1 with counts and intervals, descriptive only",
+    "certificate coverage on single-class and multi-class pools; constant scores by class diversity",
+    "three examples: lowest salted SHA256 within correction, harm, and multi-class certificate-preserved strata; archive all eligible cases",
+    "census replay of 8400 added-model generation responses; mutually exclusive lexical failure categories, gold-free",
+    "80 added-model compatibility-invalid responses: lowest salted SHA256 20 per model/task for analyst review; inspect output only without gold; archive annotation and excerpts"
+  ],
+  "parser_category_order": [
+    "transport_or_finish",
+    "empty",
+    "multiple_proposed_markers",
+    "answer_marker_not_accepted",
+    "no_accepted_answer_marker"
+  ],
+  "parser_note": "Categories describe observable response syntax, not model knowledge or whether a rejected answer is substantively correct. Original parsers and primary decisions remain unchanged.",
+  "selection_salt": "ida-v10.7-review-20261023",
+  "writing_outline": {
+    "abstract": "fixed-pool concentration effect, diagnostic coverage, parser interface and reproducible analysis",
+    "introduction": "precise contribution beyond CISC and proposal-supply analyses",
+    "results": "preserve primary tests; add heterogeneity, nontrivial certificate coverage and raw-output diagnosis",
+    "discussion": "connect counts, score range and measured overrides; scope and reuse",
+    "appendix": "compress independent admission and historical controls; preserve proofs and essential protocols"
+  }
+}

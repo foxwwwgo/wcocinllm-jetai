@@ -1,0 +1,7 @@
+population,estimate,ci95_low,ci95_high,boundary_degenerate,undefined_resamples
+primary,0.6000000000000001,0.0,1.0,False,170
+initial_four,0.5714285714285714,0.2,1.0,False,26
+added_evaluation,1.0,1.0,1.0,True,172
+added_compatibility,1.0,1.0,1.0,True,2
+six_evaluation,0.7272727272727273,0.470392156862745,1.0,False,1
+strict_primary,0.8,0.0,1.0,False,170

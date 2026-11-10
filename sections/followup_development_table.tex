@@ -1,0 +1,17 @@
+\begin{table*}[!t]\centering\small
+\caption{New-question development screen: 100 questions per task and model. Valid is the percentage of 700 scheduled seats; empty counts abstaining pools. $F$ is the single globally selected successor. Accuracy is in percent; C/H are corrections/harms against $M$. DEV is selected within each development cell. These are in-sample screening results, not an independent efficacy test.}\label{tab:followup-development}
+\begin{tabular}{@{}llrrrrrrr@{}}\toprule
+Model & Task & Valid (\%) & Empty & $M$ & $F$ & DEV & DEV $\beta$ & $F$ C/H\\\midrule
+DeepSeek-V4.1-Flash & GSM8K & 100.0 & 0 & 99 & 99 & 99 & 0 & 0/0\\
+ & CSQA & 100.0 & 0 & 79 & 79 & 82 & 8 & 0/0\\
+qwen3.8-max-0902 & GSM8K & 100.0 & 0 & 100 & 100 & 100 & 0 & 0/0\\
+ & CSQA & 100.0 & 0 & 84 & 84 & 85 & 16 & 0/0\\
+glm-5.2 & GSM8K & 100.0 & 0 & 98 & 98 & 98 & 0 & 0/0\\
+ & CSQA & 99.9 & 0 & 85 & 86 & 85 & 0 & 1/0\\
+Qwen2.5-14B-Instruct & GSM8K & 99.6 & 0 & 98 & 98 & 98 & 0 & 0/0\\
+ & CSQA & 99.9 & 0 & 83 & 83 & 83 & 0 & 0/0\\
+Granite-3.3-2B-Instruct & GSM8K & 28.0 & 14 & 79 & 79 & 79 & 0 & 0/0\\
+ & CSQA & 30.7 & 10 & 61 & 61 & 61 & 0 & 0/0\\
+Phi-3-mini-4k-instruct & GSM8K & 48.0 & 2 & 86 & 86 & 86 & 0 & 0/0\\
+ & CSQA & 26.6 & 20 & 58 & 59 & 59 & 1 & 1/0\\
+\bottomrule\end{tabular}\end{table*}

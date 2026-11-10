@@ -1,0 +1,15 @@
+beta,score_stratum,records,certified,overrides
+1,constant,27,26,0
+1,nonconstant,182,168,0
+2,constant,27,26,0
+2,nonconstant,182,157,1
+4,constant,27,26,0
+4,nonconstant,182,106,5
+8,constant,27,26,0
+8,nonconstant,182,76,13
+16,constant,27,26,0
+16,nonconstant,182,52,18
+32,constant,27,26,0
+32,nonconstant,182,18,24
+64,constant,27,26,0
+64,nonconstant,182,0,24

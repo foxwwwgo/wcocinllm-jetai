@@ -1,0 +1,17 @@
+{
+  "initial": {
+    "logical_requests": 39182,
+    "body_hashes_checked": 39192,
+    "identity_hashes_checked": 39182
+  },
+  "cisc": {
+    "logical_requests": 14700,
+    "body_hashes_checked": 14700,
+    "identity_hashes_checked": 14700
+  },
+  "independent_generation": {
+    "logical_requests": 25193,
+    "body_hashes_checked": 25237,
+    "identity_hashes_checked": 25193
+  }
+}

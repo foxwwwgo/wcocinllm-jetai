@@ -1,0 +1,154 @@
+{
+  "scope": "Compact provenance for the supplied offline records. Full collection records are available under the manuscript data statement. Local prospective locks are not public preregistration or independent attestation.",
+  "official_added_models": {
+    "granite": {
+      "repo": "ibm-granite/granite-3.3-2b-instruct-GGUF",
+      "commit": "7cdf86ccd1f1bb3491c9b7017b033f2e51367397",
+      "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/resolve/7cdf86ccd1f1bb3491c9b7017b033f2e51367397/granite-3.3-2b-instruct-Q4_K_M.gguf",
+      "sha256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852",
+      "bytes": 1545303328,
+      "gguf_file_type": 15
+    },
+    "phi": {
+      "repo": "microsoft/Phi-3-mini-4k-instruct-gguf",
+      "commit": "a64113399c2f6b8ad3e11c394733a2ddadaa7f33",
+      "url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/a64113399c2f6b8ad3e11c394733a2ddadaa7f33/Phi-3-mini-4k-instruct-q4.gguf",
+      "sha256": "8a83c7fb9049a9b2e92266fa7ad04933bb53aa1e85136b7b30f1b8000ff2edef",
+      "bytes": 2393231072,
+      "gguf_file_type": 15
+    }
+  },
+  "sources": {
+    "commonsenseqa": {
+      "url": "https://s3.amazonaws.com/commensenseqa/train_rand_split.jsonl",
+      "sha256": "58ffa3c8472410e24b8c43f423d89c8a003d8284698a6ed7874355dedd09a2fb",
+      "rows": 9741
+    },
+    "gsm8k": {
+      "url": "https://github.com/openai/grade-school-math",
+      "commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+      "rows": 7473
+    }
+  },
+  "replication_frozen_utc": "2026-10-23T03:44:27.397498+00:00",
+  "development_frozen_utc": "2026-10-23T03:47:04.372117+00:00",
+  "development_design": {
+    "DEV": "each model/task chooses from 0,1,2,4,8,16,32,64; ties lower beta",
+    "benchmark_requests_before_freeze": 0,
+    "candidate_grid": {
+      "beta": [
+        4,
+        16,
+        64
+      ],
+      "maximum_top_two_count_gap": [
+        1,
+        2
+      ],
+      "minimum_class_mean_confidence_gap": [
+        0.05,
+        0.1
+      ]
+    },
+    "continue_only_if_top_candidate": {
+      "both_task_gains_nonnegative": true,
+      "distinct_Wbeta_recovery_opportunity_questions_at_least": 10,
+      "net_gain_vs_M_at_least": 0.005,
+      "retention_at_least": 0.75,
+      "undefined_retention": "fails"
+    },
+    "created_utc": "2026-10-23T03:47:04.370699+00:00",
+    "final": "untouched reserve; minimum practical gain .005; 80% planned power; cap 10000 questions; two Holm comparisons; no optional stopping",
+    "maximum_logical_requests": 16800,
+    "models": [
+      "deepseek",
+      "qwen",
+      "glm",
+      "open_qwen14b",
+      "granite",
+      "phi"
+    ],
+    "new_question_audit_sha256": "583688ec6e460fd5cdf62b5a9a05a39fab564eabe452aa6def921c4b6a699ef3",
+    "new_questions_scope": "no recorded prior use in audited local protocol/request/result strings; full source catalogs are not evaluation; not semantic or pretraining decontamination",
+    "no_cost_estimation": true,
+    "no_posthoc_candidate_expansion": true,
+    "parser": "v8.2 uniformly for all six models; original and strict parses retained",
+    "pilot": "not started unless screen passes; all 200 pilot IDs reserved disjointly; explicit pilot/final manifest required before sampling",
+    "questions_per_task": 100,
+    "seats": 7,
+    "selection": [
+      "maximum equal-task/equal-model accuracy",
+      "fewest overrides",
+      "smallest beta",
+      "smallest count-gap cap",
+      "largest confidence gap"
+    ],
+    "stage": "B independent development screen; not a confirmatory test",
+    "stop_if_top_candidate_fails": true,
+    "tasks": [
+      "gsm8k",
+      "commonsenseqa"
+    ]
+  },
+  "decimal_amendment": {
+    "benchmark_accuracy_or_gate_results_inspected": false,
+    "files": {
+      "src/analyze_followup_decimal.py": "d0650dca00d9bd87bfe8da3676b37ed174b064c5ef55b51a7abd20c84364c049",
+      "src/gates_decimal.py": "a56e7e622649255f80a093d4473198979db205d3c2b9f5b2db5b30fad9f33344"
+    },
+    "original_implementation_preserved": "src/gates.py; src/analyze_followup.py",
+    "primary_development_analysis": "src/analyze_followup_decimal.py",
+    "reason": "Offline boundary tests found floating subtraction may reject a declared exact 5- or 10-percentage-point difference. Use exact rational means of original parsed decimal 0--100 scores for this comparison. Weighted winner, 12 candidates, ranking, stopping criteria, generation/scoring/parser and samples are unchanged.",
+    "requests_started_before_amendment": {
+      "development": 1932,
+      "replication-development": 1461
+    },
+    "sensitivity": "Also replay all 12 original floating-comparison gates on identical pools, with counts and candidate ranking; do not replace the amended primary or its stop decision based on the sensitivity.",
+    "utc": "2026-10-23T03:52:51.640392+00:00"
+  },
+  "file_sha256": {
+    "protocols/replication_freeze.json": "aff1e7d06988f13cb8cc8f5c921116c80c18ddd492fb69108042b3f67c2a586a",
+    "protocols/development_freeze.json": "5420676c7678845c72fb1a2629655089495d62a6116b72376a175a7ba26c2738",
+    "protocols/preanalysis_decimal_amendment.json": "26924b2e97965b7549c3a87644ccbe25efb5f53b26797c5e2f18418c22eb18ec",
+    "protocols/implementation_decisions.md": "c3596303383eb13d2f491ac16feed91ff6f08c28c795078d447218983d0ac381",
+    "protocols/postcollection_audit_plan.json": "b168a7bec6c16c2b022ad3cb01332d6393becf79a3cf3250be756189ec7f5926",
+    "protocols/new_questions.json": "03c04c4f6b37302e910767d9ca52ec566e0241ad03645627f10e10d427f6c116",
+    "protocols/new_references.json": "c8cee8b0f51556608215c35fecb7def8c4913adb35ff7767e9a3d9b5959606f0",
+    "protocols/new_question_audit.json": "583688ec6e460fd5cdf62b5a9a05a39fab564eabe452aa6def921c4b6a699ef3",
+    "protocols/runtime_source_audit.json": "7620b504c937270f6d1b1ad2cb50ff9db8656cf660a4bf417241d27936a72718",
+    "protocols/runtime_upstream_verification.json": "4fedbc9efee184ec568da2ec8e21d5cdf8a34f2ae02f7af3ecd08f0a3c3d16b0",
+    "results/independent_question_partition_audit.json": "943509f0d40b3fa554ca8e62b7497cc58178a9c5916152227a10c49f23ae9077"
+  },
+  "runtime_source": {
+    "recorded_utc": "2026-10-23T04:51:18.648604+00:00",
+    "upstream_commit": "2f729cfa4ca6f55b8bacf67bb2ba92cb9548e291",
+    "upstream_git_tree": "74bb8ac4649293c1a1b53f9bfd4d606714fcee58",
+    "official_blob_matches": 3800,
+    "mismatches": [],
+    "not_in_official_tree": [],
+    "scope": "Official GitHub tree metadata compared with every regular file in retained source archive; deployed source separately verified byte-identical to archive. This records build-source provenance, not a fresh reproducible binary build."
+  },
+  "new_question_partition_verification": {
+    "utc": "2026-10-23T05:35:59.679584+00:00",
+    "all_checked": true,
+    "model_outcomes_read": false,
+    "source_text_choices_and_labels_verified": 17192,
+    "unique_normalized_questions": 17192,
+    "split_counts": {
+      "gsm8k": {
+        "development": 100,
+        "pilot": 100,
+        "validation_reserve": 7253
+      },
+      "commonsenseqa": {
+        "development": 100,
+        "pilot": 100,
+        "validation_reserve": 9539
+      }
+    },
+    "scope": "Independent source reconstruction, frozen ordering, exclusions, exact-text uniqueness and disjoint splits. Does not re-audit every historical artifact or assert semantic/pretraining decontamination.",
+    "implementation": "Separate standard-library reconstruction; no import of selection code.",
+    "script_sha256": "9980798eca0dcd8eff2fbde85fd3bdf6356558d4cdd0ae5133094dff9f66b1c9"
+  }
+}

@@ -1,0 +1,7 @@
+batch,policy,C,H,net,model_question_records
+Original,W4,2,3,-1,1800
+Original,W64,5,13,-8,1800
+Original,G64,3,7,-4,1800
+Independent,W4,4,2,2,1800
+Independent,W64,11,11,0,1800
+Independent,G64,10,4,6,1800

@@ -1,0 +1,194 @@
+{
+  "scope": "Post-hoc sensitivity only. Original frozen analyses and all-question denominators are unchanged. No new generation or outcome-dependent replacement.",
+  "sign_null": "Independent symmetric signs of nonzero question-level contrasts; stronger than the mean-zero null. Exact enumeration, two-sided, Holm over H1/H2 separately in each batch.",
+  "complete_question_rule": "Exclude an entire question if any hosted configuration has fewer than seven valid candidates or incomplete confidence. Retain all three models and equal task weights in remaining clusters. This changes the population and does not replace the scheduled-question analysis.",
+  "original": {
+    "independent_questions": 600,
+    "model_question_records": 1800,
+    "task_question_counts": {
+      "gsm8k": 300,
+      "commonsenseqa": 300
+    },
+    "contrasts": {
+      "H1": {
+        "effect_pp": 0.5555555555555556,
+        "ci95_pp": [
+          0.2222222222222222,
+          0.9444444444444444
+        ],
+        "welch_raw_p": 0.0038139586012672757,
+        "nonzero_questions": 9,
+        "positive_questions": 9,
+        "negative_questions": 0,
+        "sign_symmetry_raw_p": 0.00390625,
+        "nonzero_question_ids": [
+          "csqa-064c3074a682893d49c3c5b4f1e89984",
+          "csqa-1f492f556fae64f72ce36b6caa242dd0",
+          "csqa-acb3147d946db3b06a596d48e0be56cf",
+          "csqa-cce13a32fedb997c017d3fac87c34912",
+          "csqa-e476e2c8c278eaecfe1a8b884b6aeb8e",
+          "csqa-eacd87f297193033669a93160ae3776f",
+          "csqa-feb83263e6be392351db0794004efc3f",
+          "gsm8k-test-161",
+          "gsm8k-test-304"
+        ],
+        "welch_holm_p": 0.007627917202534551,
+        "sign_symmetry_holm_p": 0.0078125
+      },
+      "H2": {
+        "effect_pp": 0.22222222222222227,
+        "ci95_pp": [
+          -0.055555555555555566,
+          0.5555555555555555
+        ],
+        "welch_raw_p": 0.15795053148798924,
+        "nonzero_questions": 8,
+        "positive_questions": 6,
+        "negative_questions": 2,
+        "sign_symmetry_raw_p": 0.2890625,
+        "nonzero_question_ids": [
+          "csqa-064c3074a682893d49c3c5b4f1e89984",
+          "csqa-8c8052980e357545398d27d1c3c832d8",
+          "csqa-a0f5414bf98e094f4d807abee28861a4",
+          "csqa-e313d7967f72c2b880213daaaf4b7181",
+          "csqa-e476e2c8c278eaecfe1a8b884b6aeb8e",
+          "csqa-eacd87f297193033669a93160ae3776f",
+          "gsm8k-test-161",
+          "gsm8k-test-304"
+        ],
+        "welch_holm_p": 0.15795053148798924,
+        "sign_symmetry_holm_p": 0.2890625
+      }
+    }
+  },
+  "independent_batch": {
+    "independent_questions": 600,
+    "model_question_records": 1800,
+    "task_question_counts": {
+      "gsm8k": 300,
+      "commonsenseqa": 300
+    },
+    "contrasts": {
+      "H1": {
+        "effect_pp": 0.5,
+        "ci95_pp": [
+          0.16666666666666669,
+          0.8888888888888888
+        ],
+        "welch_raw_p": 0.0064564742130323784,
+        "nonzero_questions": 8,
+        "positive_questions": 8,
+        "negative_questions": 0,
+        "sign_symmetry_raw_p": 0.0078125,
+        "nonzero_question_ids": [
+          "csqa-30d0c2006613eec41ae814d76c17a798",
+          "csqa-335b51bd3a8ada014bbe6754dcbd425f",
+          "csqa-7bff23f6c12e9136f0961514bebb8cd3",
+          "csqa-bee2a6eadfaf7a4fa0a214e341ddbe5b",
+          "csqa-cce13a32fedb997c017d3fac87c34912",
+          "csqa-e476e2c8c278eaecfe1a8b884b6aeb8e",
+          "csqa-eacd87f297193033669a93160ae3776f",
+          "csqa-feb83263e6be392351db0794004efc3f"
+        ],
+        "welch_holm_p": 0.012912948426064757,
+        "sign_symmetry_holm_p": 0.015625
+      },
+      "H2": {
+        "effect_pp": 0.3333333333333333,
+        "ci95_pp": [
+          0.0,
+          0.7222222222222222
+        ],
+        "welch_raw_p": 0.05765193654493296,
+        "nonzero_questions": 7,
+        "positive_questions": 6,
+        "negative_questions": 1,
+        "sign_symmetry_raw_p": 0.109375,
+        "nonzero_question_ids": [
+          "csqa-30d0c2006613eec41ae814d76c17a798",
+          "csqa-335b51bd3a8ada014bbe6754dcbd425f",
+          "csqa-6b9221c1af583ffb43580857d6fde38a",
+          "csqa-bee2a6eadfaf7a4fa0a214e341ddbe5b",
+          "csqa-cce13a32fedb997c017d3fac87c34912",
+          "csqa-e476e2c8c278eaecfe1a8b884b6aeb8e",
+          "csqa-eacd87f297193033669a93160ae3776f"
+        ],
+        "welch_holm_p": 0.05765193654493296,
+        "sign_symmetry_holm_p": 0.109375
+      }
+    }
+  },
+  "excluded_incomplete_questions": 5,
+  "complete_question_sensitivity": {
+    "independent_questions": 595,
+    "model_question_records": 1785,
+    "task_question_counts": {
+      "gsm8k": 297,
+      "commonsenseqa": 298
+    },
+    "contrasts": {
+      "H1": {
+        "effect_pp": 0.5033557046979865,
+        "ci95_pp": [
+          0.16778523489932887,
+          0.8948545861297539
+        ],
+        "welch_raw_p": 0.006455131729294196,
+        "nonzero_questions": 8,
+        "positive_questions": 8,
+        "negative_questions": 0,
+        "sign_symmetry_raw_p": 0.0078125,
+        "nonzero_question_ids": [
+          "csqa-30d0c2006613eec41ae814d76c17a798",
+          "csqa-335b51bd3a8ada014bbe6754dcbd425f",
+          "csqa-7bff23f6c12e9136f0961514bebb8cd3",
+          "csqa-bee2a6eadfaf7a4fa0a214e341ddbe5b",
+          "csqa-cce13a32fedb997c017d3fac87c34912",
+          "csqa-e476e2c8c278eaecfe1a8b884b6aeb8e",
+          "csqa-eacd87f297193033669a93160ae3776f",
+          "csqa-feb83263e6be392351db0794004efc3f"
+        ],
+        "welch_holm_p": 0.012910263458588391,
+        "sign_symmetry_holm_p": 0.015625
+      },
+      "H2": {
+        "effect_pp": 0.3355704697986577,
+        "ci95_pp": [
+          0.0,
+          0.6711409395973155
+        ],
+        "welch_raw_p": 0.057651062800805626,
+        "nonzero_questions": 7,
+        "positive_questions": 6,
+        "negative_questions": 1,
+        "sign_symmetry_raw_p": 0.109375,
+        "nonzero_question_ids": [
+          "csqa-30d0c2006613eec41ae814d76c17a798",
+          "csqa-335b51bd3a8ada014bbe6754dcbd425f",
+          "csqa-6b9221c1af583ffb43580857d6fde38a",
+          "csqa-bee2a6eadfaf7a4fa0a214e341ddbe5b",
+          "csqa-cce13a32fedb997c017d3fac87c34912",
+          "csqa-e476e2c8c278eaecfe1a8b884b6aeb8e",
+          "csqa-eacd87f297193033669a93160ae3776f"
+        ],
+        "welch_holm_p": 0.057651062800805626,
+        "sign_symmetry_holm_p": 0.109375
+      }
+    }
+  },
+  "between_batch_event_overlap": {
+    "H1": {
+      "original": 9,
+      "independent_batch": 8,
+      "intersection": 4,
+      "union": 13
+    },
+    "H2": {
+      "original": 8,
+      "independent_batch": 7,
+      "intersection": 2,
+      "union": 13
+    }
+  },
+  "frozen_estimates_verified": true
+}

@@ -1,0 +1,5 @@
+branch,grid_index,temperature,bootstrap_selected_count,evaluation_answer_disagreements
+ptrue,28,0.05422221006501587,6254,0
+ptrue,80,10000.0,3746,18
+verbal,51,11.568875283162832,6254,0
+verbal,80,10000.0,3746,8

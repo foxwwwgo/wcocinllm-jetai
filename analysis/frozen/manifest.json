@@ -1,0 +1,7 @@
+{
+  "files": {
+    "gates.py": "1bfc01d8e9ad261504311191f477eea20aeadf2946592a7f8982d6506e05b2a5",
+    "gates_decimal.py": "a56e7e622649255f80a093d4473198979db205d3c2b9f5b2db5b30fad9f33344"
+  },
+  "note": "Exact frozen gate modules; original design-stage comments are preserved as provenance. See current manuscript/data for the completed study."
+}

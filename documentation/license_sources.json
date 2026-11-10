@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-25",
+  "source_receipts": [
+    {
+      "file": "CC-BY-4.0.txt",
+      "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "file": "MIT-template.txt",
+      "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT.txt",
+      "bytes": 1078,
+      "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "file": "CommonsenseQA-card.md",
+      "url": "https://huggingface.co/datasets/tau/commonsense_qa/raw/main/README.md",
+      "bytes": 7395,
+      "sha256": "172917e887dcc013fe0f0bd6aa8c810aea1e2be67d3bc7ff63e9b9d92075cc34",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "file": "CISC-prompt_util.py",
+      "url": "https://raw.githubusercontent.com/taubenfeld/CISC/40011d9745662612ec125683eae47a1e6572b0bb/src/datasets/prompt_util.py",
+      "bytes": 2829,
+      "sha256": "12c73d7642681590a89be7ac8a369bf2e03feed12eea99b1eebe591b68380317",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "file": "LICENSES/GSM8K-MIT.txt",
+      "source": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "retained_notice_sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "file": "LICENSES/Apache-2.0.txt",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "retained_notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "file": "LICENSES/CISC-ORIGINAL-NOTICE.md",
+      "source": "Original matched-experiment third_party/NOTICE.md",
+      "retained_notice_sha256": "4208fe87aafdc0c91a0d8e7738bb15a9d285782a02b7eac1ca6d6d27969d6927",
+      "upstream": "https://github.com/taubenfeld/CISC/tree/40011d9745662612ec125683eae47a1e6572b0bb",
+      "checked_date": "2026-10-25"
+    }
+  ],
+  "commonsenseqa_basis": "MIT is declared in the official tau dataset card; no dataset-specific copyright line was supplied there.",
+  "manuscript_license": "Separate; excluded from the package grants."
+}

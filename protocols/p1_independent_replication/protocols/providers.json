@@ -1,0 +1,35 @@
+{
+  "providers": {
+    "deepseek": {
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "key_env": "DEEPSEEK_API_KEY",
+      "model": "deepseek-v4-flash",
+      "timeout": 120
+    },
+    "glm": {
+      "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "key_env": "GLM_API_KEY",
+      "model": "glm-5.2",
+      "timeout": 120
+    },
+    "qwen": {
+      "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "extra_body": {
+        "enable_thinking": false
+      },
+      "key_env": "DASHSCOPE_API_KEY",
+      "model": "qwen3.8-max-0902",
+      "timeout": 120
+    }
+  }
+}

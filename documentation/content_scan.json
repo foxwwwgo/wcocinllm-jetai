@@ -1,0 +1,17 @@
+{
+  "version": "10.19",
+  "date": "2026-10-26",
+  "scope": "Fresh text and decompressed-log scan, PDF text/metadata/objects, PNG metadata and archive path checks. Known author-identity variants, credential-shaped strings and private paths checked; no private credentials reopened.",
+  "files_scanned": 220,
+  "text_files_checked": 204,
+  "text_lines_checked": 186023,
+  "decompressed_archives": 4,
+  "decompressed_records_checked": 87475,
+  "pdf_files_checked": 6,
+  "png_metadata_checked": 6,
+  "matches": 0,
+  "author_identity_scan": "identified original-author attribution intentionally retained",
+  "scientific_files_unchanged": 161,
+  "manuscript_source_files_synchronized": 24,
+  "online_snapshot": "Not inspected or uploaded by this P1 revision."
+}

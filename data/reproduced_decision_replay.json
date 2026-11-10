@@ -1,0 +1,2403 @@
+{
+  "utc": "2026-11-10T01:38:02.986023+00:00",
+  "status": "all deterministic readouts, subsets, counts, selection and stop decision verified",
+  "decision": "STOP_CANDIDATE_FAMILY_DEVELOPMENT_SCREEN_FAILED",
+  "development": {
+    "gsm8k:deepseek": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 700,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 0,
+      "policies": {
+        "DEV": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 99.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 99,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "gsm8k:qwen": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 700,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 0,
+      "policies": {
+        "DEV": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "G64": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "M": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "RANK4": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "RANK64": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W0": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W1": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W16": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W2": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W32": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W4": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W64": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "W8": {
+          "correct": 100.0,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b16-h1-d0.05": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b16-h1-d0.10": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b16-h2-d0.05": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b16-h2-d0.10": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b4-h1-d0.05": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b4-h1-d0.10": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b4-h2-d0.05": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b4-h2-d0.10": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b64-h1-d0.05": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b64-h1-d0.10": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b64-h2-d0.05": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        },
+        "b64-h2-d0.10": {
+          "correct": 100,
+          "recoveries": 0,
+          "harms": 0
+        }
+      }
+    },
+    "gsm8k:glm": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 700,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 0,
+      "policies": {
+        "DEV": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "gsm8k:open_qwen14b": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 697,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 2,
+      "policies": {
+        "DEV": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 98.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 98,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "gsm8k:granite": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 196,
+      "empty_pools": 14,
+      "score_failure_pools": 0,
+      "recoverable_questions": 1,
+      "policies": {
+        "DEV": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 78.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "M": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 78.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "RANK64": {
+          "correct": 78.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W0": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 78.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W2": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 78.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W4": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 78.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W8": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 78,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 78,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 78,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 78,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "gsm8k:phi": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 336,
+      "empty_pools": 2,
+      "score_failure_pools": 0,
+      "recoverable_questions": 4,
+      "policies": {
+        "DEV": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "M": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "RANK64": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W0": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W2": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W4": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W8": {
+          "correct": 86.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 86,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:deepseek": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 700,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 8,
+      "policies": {
+        "DEV": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 81.0,
+          "recoveries": 3.0,
+          "harms": 1.0
+        },
+        "W0": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 79.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 82.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 80,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 80,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 80,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 80,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 79,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:qwen": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 700,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 5,
+      "policies": {
+        "DEV": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:glm": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 699,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 7,
+      "policies": {
+        "DEV": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 84.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "M": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "RANK64": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W0": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W2": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W4": {
+          "correct": 85.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W8": {
+          "correct": 85.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 85,
+          "recoveries": 1,
+          "harms": 1.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 86,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 84,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 85,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 85,
+          "recoveries": 1,
+          "harms": 1.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 86,
+          "recoveries": 1,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:open_qwen14b": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 699,
+      "empty_pools": 0,
+      "score_failure_pools": 0,
+      "recoverable_questions": 8,
+      "policies": {
+        "DEV": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 83.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 83,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:granite": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 215,
+      "empty_pools": 10,
+      "score_failure_pools": 0,
+      "recoverable_questions": 4,
+      "policies": {
+        "DEV": {
+          "correct": 61.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "M": {
+          "correct": 61.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "RANK64": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W0": {
+          "correct": 61.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W16": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W2": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W32": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W4": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W64": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W8": {
+          "correct": 60.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 60,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 61,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 60,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 61,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 60,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 61,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 60,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 61,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 60,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 61,
+          "recoveries": 0,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 60,
+          "recoveries": 0,
+          "harms": 1.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 61,
+          "recoveries": 0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:phi": {
+      "n": 100,
+      "seats": 700,
+      "valid_seats": 186,
+      "empty_pools": 20,
+      "score_failure_pools": 0,
+      "recoverable_questions": 6,
+      "policies": {
+        "DEV": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "G64": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "M": {
+          "correct": 58.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "RANK64": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W0": {
+          "correct": 58.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W16": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W2": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W32": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W4": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W64": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "W8": {
+          "correct": 59.0,
+          "recoveries": 2.0,
+          "harms": 1.0
+        },
+        "b16-h1-d0.05": {
+          "correct": 59,
+          "recoveries": 2,
+          "harms": 1.0
+        },
+        "b16-h1-d0.10": {
+          "correct": 59,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b16-h2-d0.05": {
+          "correct": 59,
+          "recoveries": 2,
+          "harms": 1.0
+        },
+        "b16-h2-d0.10": {
+          "correct": 59,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b4-h1-d0.05": {
+          "correct": 59,
+          "recoveries": 2,
+          "harms": 1.0
+        },
+        "b4-h1-d0.10": {
+          "correct": 59,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b4-h2-d0.05": {
+          "correct": 59,
+          "recoveries": 2,
+          "harms": 1.0
+        },
+        "b4-h2-d0.10": {
+          "correct": 59,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b64-h1-d0.05": {
+          "correct": 59,
+          "recoveries": 2,
+          "harms": 1.0
+        },
+        "b64-h1-d0.10": {
+          "correct": 59,
+          "recoveries": 1,
+          "harms": 0.0
+        },
+        "b64-h2-d0.05": {
+          "correct": 59,
+          "recoveries": 2,
+          "harms": 1.0
+        },
+        "b64-h2-d0.10": {
+          "correct": 59,
+          "recoveries": 1,
+          "harms": 0.0
+        }
+      }
+    }
+  },
+  "replication_original_parser": {
+    "gsm8k:granite": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 192,
+      "empty_pools": 170,
+      "score_failure_pools": 0,
+      "recoverable_questions": 4,
+      "policies": {
+        "DEV": {
+          "correct": 106.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "M": {
+          "correct": 106.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "RANK64": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W0": {
+          "correct": 106.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W16": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W2": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W32": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W4": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W64": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        },
+        "W8": {
+          "correct": 106.0,
+          "recoveries": 1.0,
+          "harms": 1.0
+        }
+      }
+    },
+    "gsm8k:phi": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 190,
+      "empty_pools": 183,
+      "score_failure_pools": 0,
+      "recoverable_questions": 10,
+      "policies": {
+        "DEV": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 94.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:granite": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 441,
+      "empty_pools": 72,
+      "score_failure_pools": 0,
+      "recoverable_questions": 11,
+      "policies": {
+        "DEV": {
+          "correct": 151.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 148.0,
+          "recoveries": 3.0,
+          "harms": 6.0
+        },
+        "M": {
+          "correct": 151.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 148.0,
+          "recoveries": 3.0,
+          "harms": 6.0
+        },
+        "RANK64": {
+          "correct": 148.0,
+          "recoveries": 4.0,
+          "harms": 7.0
+        },
+        "W0": {
+          "correct": 151.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 150.0,
+          "recoveries": 3.0,
+          "harms": 4.0
+        },
+        "W16": {
+          "correct": 148.0,
+          "recoveries": 3.0,
+          "harms": 6.0
+        },
+        "W2": {
+          "correct": 150.0,
+          "recoveries": 3.0,
+          "harms": 4.0
+        },
+        "W32": {
+          "correct": 148.0,
+          "recoveries": 3.0,
+          "harms": 6.0
+        },
+        "W4": {
+          "correct": 150.0,
+          "recoveries": 3.0,
+          "harms": 4.0
+        },
+        "W64": {
+          "correct": 148.0,
+          "recoveries": 3.0,
+          "harms": 6.0
+        },
+        "W8": {
+          "correct": 150.0,
+          "recoveries": 3.0,
+          "harms": 4.0
+        }
+      }
+    },
+    "commonsenseqa:phi": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 54,
+      "empty_pools": 250,
+      "score_failure_pools": 0,
+      "recoverable_questions": 1,
+      "policies": {
+        "DEV": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK64": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W0": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W4": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W8": {
+          "correct": 41.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        }
+      }
+    }
+  },
+  "replication_compatibility_parser": {
+    "gsm8k:granite": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 621,
+      "empty_pools": 47,
+      "score_failure_pools": 0,
+      "recoverable_questions": 12,
+      "policies": {
+        "DEV": {
+          "correct": 209.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 206.0,
+          "recoveries": 2.0,
+          "harms": 5.0
+        },
+        "M": {
+          "correct": 209.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 206.0,
+          "recoveries": 2.0,
+          "harms": 5.0
+        },
+        "RANK64": {
+          "correct": 207.0,
+          "recoveries": 3.0,
+          "harms": 5.0
+        },
+        "W0": {
+          "correct": 209.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 207.0,
+          "recoveries": 2.0,
+          "harms": 4.0
+        },
+        "W16": {
+          "correct": 206.0,
+          "recoveries": 2.0,
+          "harms": 5.0
+        },
+        "W2": {
+          "correct": 207.0,
+          "recoveries": 2.0,
+          "harms": 4.0
+        },
+        "W32": {
+          "correct": 206.0,
+          "recoveries": 2.0,
+          "harms": 5.0
+        },
+        "W4": {
+          "correct": 207.0,
+          "recoveries": 2.0,
+          "harms": 4.0
+        },
+        "W64": {
+          "correct": 206.0,
+          "recoveries": 2.0,
+          "harms": 5.0
+        },
+        "W8": {
+          "correct": 206.0,
+          "recoveries": 2.0,
+          "harms": 5.0
+        }
+      }
+    },
+    "gsm8k:phi": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 1032,
+      "empty_pools": 4,
+      "score_failure_pools": 1,
+      "recoverable_questions": 21,
+      "policies": {
+        "DEV": {
+          "correct": 249.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "G64": {
+          "correct": 252.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "M": {
+          "correct": 249.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 250.0,
+          "recoveries": 3.0,
+          "harms": 2.0
+        },
+        "RANK64": {
+          "correct": 250.0,
+          "recoveries": 3.0,
+          "harms": 2.0
+        },
+        "W0": {
+          "correct": 249.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 252.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W16": {
+          "correct": 252.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W2": {
+          "correct": 252.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W32": {
+          "correct": 250.0,
+          "recoveries": 3.0,
+          "harms": 2.0
+        },
+        "W4": {
+          "correct": 252.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        },
+        "W64": {
+          "correct": 250.0,
+          "recoveries": 3.0,
+          "harms": 2.0
+        },
+        "W8": {
+          "correct": 252.0,
+          "recoveries": 3.0,
+          "harms": 0.0
+        }
+      }
+    },
+    "commonsenseqa:granite": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 673,
+      "empty_pools": 37,
+      "score_failure_pools": 0,
+      "recoverable_questions": 26,
+      "policies": {
+        "DEV": {
+          "correct": 170.0,
+          "recoveries": 5.0,
+          "harms": 4.0
+        },
+        "G64": {
+          "correct": 165.0,
+          "recoveries": 5.0,
+          "harms": 9.0
+        },
+        "M": {
+          "correct": 169.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 164.0,
+          "recoveries": 5.0,
+          "harms": 10.0
+        },
+        "RANK64": {
+          "correct": 165.0,
+          "recoveries": 7.0,
+          "harms": 11.0
+        },
+        "W0": {
+          "correct": 169.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 170.0,
+          "recoveries": 5.0,
+          "harms": 4.0
+        },
+        "W16": {
+          "correct": 164.0,
+          "recoveries": 5.0,
+          "harms": 10.0
+        },
+        "W2": {
+          "correct": 170.0,
+          "recoveries": 5.0,
+          "harms": 4.0
+        },
+        "W32": {
+          "correct": 164.0,
+          "recoveries": 5.0,
+          "harms": 10.0
+        },
+        "W4": {
+          "correct": 170.0,
+          "recoveries": 5.0,
+          "harms": 4.0
+        },
+        "W64": {
+          "correct": 164.0,
+          "recoveries": 5.0,
+          "harms": 10.0
+        },
+        "W8": {
+          "correct": 168.0,
+          "recoveries": 5.0,
+          "harms": 6.0
+        }
+      }
+    },
+    "commonsenseqa:phi": {
+      "n": 300,
+      "seats": 2100,
+      "valid_seats": 516,
+      "empty_pools": 62,
+      "score_failure_pools": 0,
+      "recoverable_questions": 11,
+      "policies": {
+        "DEV": {
+          "correct": 181.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "G64": {
+          "correct": 180.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "M": {
+          "correct": 182.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "RANK4": {
+          "correct": 180.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "RANK64": {
+          "correct": 180.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W0": {
+          "correct": 182.0,
+          "recoveries": 0.0,
+          "harms": 0.0
+        },
+        "W1": {
+          "correct": 181.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W16": {
+          "correct": 180.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W2": {
+          "correct": 181.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W32": {
+          "correct": 180.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W4": {
+          "correct": 181.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        },
+        "W64": {
+          "correct": 180.0,
+          "recoveries": 0.0,
+          "harms": 2.0
+        },
+        "W8": {
+          "correct": 181.0,
+          "recoveries": 0.0,
+          "harms": 1.0
+        }
+      }
+    }
+  },
+  "all_candidates": [
+    {
+      "key": "b16-h2-d0.10",
+      "beta": 16,
+      "h": 2,
+      "eta": 0.1,
+      "correct": 1012,
+      "net": 2,
+      "overrides": 5,
+      "retained": 2,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.2857142857142857,
+      "passes": false
+    },
+    {
+      "key": "b64-h2-d0.10",
+      "beta": 64,
+      "h": 2,
+      "eta": 0.1,
+      "correct": 1012,
+      "net": 2,
+      "overrides": 5,
+      "retained": 2,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.2857142857142857,
+      "passes": false
+    },
+    {
+      "key": "b4-h1-d0.10",
+      "beta": 4,
+      "h": 1,
+      "eta": 0.1,
+      "correct": 1011,
+      "net": 1,
+      "overrides": 2,
+      "retained": 1,
+      "opportunities": 2,
+      "unique_opportunity_questions": 2,
+      "retention": 0.5,
+      "passes": false
+    },
+    {
+      "key": "b4-h2-d0.10",
+      "beta": 4,
+      "h": 2,
+      "eta": 0.1,
+      "correct": 1011,
+      "net": 1,
+      "overrides": 2,
+      "retained": 1,
+      "opportunities": 2,
+      "unique_opportunity_questions": 2,
+      "retention": 0.5,
+      "passes": false
+    },
+    {
+      "key": "b16-h1-d0.10",
+      "beta": 16,
+      "h": 1,
+      "eta": 0.1,
+      "correct": 1011,
+      "net": 1,
+      "overrides": 4,
+      "retained": 1,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.14285714285714285,
+      "passes": false
+    },
+    {
+      "key": "b64-h1-d0.10",
+      "beta": 64,
+      "h": 1,
+      "eta": 0.1,
+      "correct": 1011,
+      "net": 1,
+      "overrides": 4,
+      "retained": 1,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.14285714285714285,
+      "passes": false
+    },
+    {
+      "key": "b4-h1-d0.05",
+      "beta": 4,
+      "h": 1,
+      "eta": 0.05,
+      "correct": 1010,
+      "net": 0,
+      "overrides": 7,
+      "retained": 2,
+      "opportunities": 2,
+      "unique_opportunity_questions": 2,
+      "retention": 1.0,
+      "passes": false
+    },
+    {
+      "key": "b4-h2-d0.05",
+      "beta": 4,
+      "h": 2,
+      "eta": 0.05,
+      "correct": 1010,
+      "net": 0,
+      "overrides": 7,
+      "retained": 2,
+      "opportunities": 2,
+      "unique_opportunity_questions": 2,
+      "retention": 1.0,
+      "passes": false
+    },
+    {
+      "key": "b16-h2-d0.05",
+      "beta": 16,
+      "h": 2,
+      "eta": 0.05,
+      "correct": 1009,
+      "net": -1,
+      "overrides": 15,
+      "retained": 4,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.5714285714285714,
+      "passes": false
+    },
+    {
+      "key": "b64-h2-d0.05",
+      "beta": 64,
+      "h": 2,
+      "eta": 0.05,
+      "correct": 1009,
+      "net": -1,
+      "overrides": 15,
+      "retained": 4,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.5714285714285714,
+      "passes": false
+    },
+    {
+      "key": "b16-h1-d0.05",
+      "beta": 16,
+      "h": 1,
+      "eta": 0.05,
+      "correct": 1008,
+      "net": -2,
+      "overrides": 14,
+      "retained": 3,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.42857142857142855,
+      "passes": false
+    },
+    {
+      "key": "b64-h1-d0.05",
+      "beta": 64,
+      "h": 1,
+      "eta": 0.05,
+      "correct": 1008,
+      "net": -2,
+      "overrides": 14,
+      "retained": 3,
+      "opportunities": 7,
+      "unique_opportunity_questions": 6,
+      "retention": 0.42857142857142855,
+      "passes": false
+    }
+  ],
+  "independent_team": false,
+  "implementation": "Separate standard-library code path; no import of scientific decision code."
+}

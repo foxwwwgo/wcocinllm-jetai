@@ -1,0 +1,51 @@
+{
+  "unique_logical_requests": 25193,
+  "transport_attempts_including_archived_billing_denials": 25237,
+  "logical_counts": {
+    "deepseek:confidence": 4200,
+    "deepseek:generation": 4200,
+    "glm:confidence": 4194,
+    "glm:generation": 4200,
+    "qwen:confidence": 4199,
+    "qwen:generation": 4200
+  },
+  "attempt_http_status": {
+    "deepseek:200": 8400,
+    "deepseek:402": 4,
+    "glm:200": 8387,
+    "glm:429": 45,
+    "qwen:200": 8399,
+    "qwen:400": 1,
+    "qwen:None": 1
+  },
+  "returned_models": {
+    "deepseek:deepseek-flash": 8400,
+    "glm:None": 7,
+    "glm:glm-5.2": 8387,
+    "qwen:qwen3.8-max-0902": 8399
+  },
+  "usage_numeric_fields_by_provider": {
+    "qwen": {
+      "completion_tokens": 937015,
+      "prompt_tokens": 2089288,
+      "total_tokens": 3026303
+    },
+    "deepseek": {
+      "completion_tokens": 616568,
+      "prompt_cache_hit_tokens": 370944,
+      "prompt_cache_miss_tokens": 1251972,
+      "prompt_tokens": 1622916,
+      "total_tokens": 2239484
+    },
+    "glm": {
+      "completion_tokens": 677515,
+      "prompt_tokens": 1697684,
+      "total_tokens": 2375199
+    }
+  },
+  "sum_attempt_latency_seconds": 60362.646054320794,
+  "first_attempt_utc": "2026-10-24T13:09:08.396038+00:00",
+  "last_attempt_utc": "2026-10-24T16:57:40.889943+00:00",
+  "monetary_estimates": null,
+  "scope": "Resource accounting includes archived pre-generation billing denials. Scientific rows retain the original 1800 scheduled model-question records."
+}

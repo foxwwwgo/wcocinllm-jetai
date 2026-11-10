@@ -1,0 +1,54 @@
+{
+  "seed": 2026102401,
+  "scope": "diagnostic bootstrap of archived development questions; original temperature remains locked; evaluation labels not used to select or judge temperature stability",
+  "branches": {
+    "ptrue": {
+      "temperature": 0.05422221006501587,
+      "grid_position": 28,
+      "best_development_correct": 89,
+      "tied_best_grid_points": 28,
+      "bootstrap_repeats": 10000,
+      "selected_locked_temperature_fraction": 0.6254,
+      "bootstrap_temperature_q025_q50_q975": [
+        0.05422221006501587,
+        0.05422221006501587,
+        10000.0
+      ],
+      "evaluation_decision_disagreement_median_q95": [
+        0.0,
+        18.0
+      ],
+      "evaluation_decision_disagreement_max": 18,
+      "evaluation_labels_used_for_stability": false,
+      "multiclass_complete_pools": 114,
+      "multiclass_max_candidate_weight_median": 0.27788854190852164,
+      "multiclass_max_candidate_weight_above_0_9": 0,
+      "multiclass_score_span_over_temperature_median": 2.27672298641049,
+      "multiclass_prediction_different_from_hard_argmax": 15
+    },
+    "verbal": {
+      "temperature": 11.568875283162832,
+      "grid_position": 51,
+      "best_development_correct": 89,
+      "tied_best_grid_points": 51,
+      "bootstrap_repeats": 10000,
+      "selected_locked_temperature_fraction": 0.6254,
+      "bootstrap_temperature_q025_q50_q975": [
+        11.568875283162832,
+        11.568875283162832,
+        10000.0
+      ],
+      "evaluation_decision_disagreement_median_q95": [
+        0.0,
+        8.0
+      ],
+      "evaluation_decision_disagreement_max": 8,
+      "evaluation_labels_used_for_stability": false,
+      "multiclass_complete_pools": 114,
+      "multiclass_max_candidate_weight_median": 0.17115613753122252,
+      "multiclass_max_candidate_weight_above_0_9": 0,
+      "multiclass_score_span_over_temperature_median": 0.8643882620598262,
+      "multiclass_prediction_different_from_hard_argmax": 21
+    }
+  }
+}

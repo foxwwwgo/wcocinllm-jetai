@@ -1,0 +1,19 @@
+{
+  "purpose": "Descriptive cross-configuration recovery-harm overview",
+  "source_sha256": {
+    "evaluation_rows.json": "0cd0737fe7dcd9255045a93175a83a1a667cafe4348d1ece248199a780dfd58a",
+    "replication_rows.json": "d2d9345d98b7a1cd72baca80f71771617b6b9ecb21121aa194da1be455e5d899",
+    "replication_extended_parser_rows.json": "611784a50df7ed8760553786f22ea1262bf56c09adc3c51ef14875233ddfff7a"
+  },
+  "cells": 48,
+  "questions_per_cell": 300,
+  "policies": [
+    "W4",
+    "W64",
+    "G64"
+  ],
+  "net_definition": "corrections minus harms",
+  "matching": "Identical question IDs within task across all configurations and both added-family parsers",
+  "verified": "Recomputed from decisions/gold and matched every displayed count to all_readouts.csv",
+  "sampling": "Shared questions; parser variants and model rows are not independent replications"
+}

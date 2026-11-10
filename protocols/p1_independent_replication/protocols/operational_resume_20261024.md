@@ -1,0 +1,9 @@
+# Operational resumption after a billing stop
+
+Recorded on 24 October 2026 before any resumed requests. The original protocol, question list and thirteen frozen code/configuration files remain unchanged.
+
+The first collection began at 13:09:08 UTC. Four concurrent DeepSeek generation requests were rejected with HTTP 402 and insufficient_balance_error, without any generated choices, response model identifier or answer content. The frozen collector stopped new scheduling. Four Qwen and two GLM candidate/score bundles already in flight completed and were committed. No partial correctness or hypothesis result was examined.
+
+The collector uses immutable request caches. A cached HTTP 402 would otherwise be returned on every restart, even after billing is resolved. Therefore the four denied request directories are moved, byte-for-byte, to raw/interruption_history/20261024T130914Z-deepseek-402/. Their original request keys and file hashes are recorded in results/billing_interruption.json. No successful request or parsed seat is removed or changed. The next invocation of the unchanged collector may issue those same logical requests after the account issue is resolved. This is recovery from a pre-generation billing denial, not replacement of a generated answer or an outcome-based resample.
+
+Use the original batch identity, model names, parameters, parser, request limits and analysis. Resume only after billing is resolved. Preserve further operational stops in the same manner with separate event identifiers. Include archived denials in the final transport-attempt accounting and response export; distinguish logical requests from transport attempts. Original successful records remain reusable only within this batch. Do not treat six completed seats as completed model-question observations or calculate interim correctness.

@@ -1,0 +1,12 @@
+{
+  "state": "completed",
+  "batch": "ida-p1-independent-20261024",
+  "completed_utc": "2026-10-24T16:57:41.481313+00:00",
+  "candidate_seats": 12600,
+  "model_question_records": 1800,
+  "independent_questions": 600,
+  "original_frozen_files_unchanged": true,
+  "original_interruption_status": "protocols/p1_independent_replication/operational_records/initial_billing_stop_status.json",
+  "analysis": "data/independent_replication/analysis.json",
+  "offline_verification": "data/independent_replication/offline_verification.json"
+}

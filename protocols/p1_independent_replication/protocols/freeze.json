@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-10-24T12:21:54.521246+00:00",
+  "benchmark_requests_before_freeze": 0,
+  "models": [
+    "deepseek-v4-flash",
+    "qwen3.8-max-0902",
+    "glm-5.2"
+  ],
+  "questions": 600,
+  "candidate_seats": 12600,
+  "files": {
+    "protocols/PROTOCOL.md": "74632c17d86a6a58a6d41bdc8b22740cc84f79648da02ad94d01ef457172bf9b",
+    "protocols/original_development_lock.json": "0cf41c1756334a546ada00e6a1cc59262b59396d3dd6f4db518d842e95cafa61",
+    "protocols/original_evaluation_rows.json": "0cd0737fe7dcd9255045a93175a83a1a667cafe4348d1ece248199a780dfd58a",
+    "protocols/preflight_checks.json": "79691b1e5de50243efb2c42e1348daf65cdfc047e4ebf22ff7ec8c31c9909c27",
+    "protocols/providers.json": "8a14b4d944536bbe88e91ed6a46ec64c202c2d7a79458c588432b28256b612ab",
+    "protocols/questions.json": "1d0c6b6e693cebc822e4fea433ddd50f1a3c12382322e8640038b5e79e60a0cf",
+    "protocols/references.json": "3c7f5026d4ee2a0bae08676d64cb526715308b28f1c28eef0b1f12881117ced7",
+    "src/analyze.py": "1a05892cc9bc5ab986c87e5d02057aa888a05f1ab38738bb24f7d1ec10e65c26",
+    "src/collector_base.py": "cfbdbabe0c6ef1b1c0406a007414eed13e9e9dab8ccd6d5f2b75159b1d0d79b1",
+    "src/run.py": "b39eb1b5a1bfca0adfac44e54ae3a2e01658ba25b70f53dcaf22902ff9961c72",
+    "src/run_amended.py": "562bd375e71c24339cdecc8ff214b5316095e34fed98934fe1ef44431c098c99",
+    "src/statistics_core.py": "dbbaa909f69522598077508091200d8061ae31702b0581445f668e1b87f130f1",
+    "src/study.py": "8e71d0b2ccde2d084182c5d7114b292917b6178cd124cfc1178df24ce07335be"
+  }
+}

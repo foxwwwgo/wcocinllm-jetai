@@ -1,0 +1,89 @@
+{
+  "status": "verified",
+  "initial_records": 2400,
+  "primary_questions": 600,
+  "primary_counts": {
+    "M": {
+      "correct": 1677,
+      "corrections": 0,
+      "harms": 0,
+      "net": 0
+    },
+    "W4": {
+      "correct": 1676,
+      "corrections": 2,
+      "harms": 3,
+      "net": -1
+    },
+    "W64": {
+      "correct": 1669,
+      "corrections": 5,
+      "harms": 13,
+      "net": -8
+    },
+    "G64": {
+      "correct": 1673,
+      "corrections": 3,
+      "harms": 7,
+      "net": -4
+    }
+  },
+  "primary_effects": {
+    "H1_harm64_minus_harm4": {
+      "effect_pp": 0.5555555555555556,
+      "nonzero_questions": 9
+    },
+    "H2_accuracy_guard64_minus_64": {
+      "effect_pp": 0.22222222222222218,
+      "nonzero_questions": 8
+    }
+  },
+  "cisc_records": 600,
+  "cisc_counts": {
+    "M": {
+      "correct": 513,
+      "corrections": 0,
+      "harms": 0,
+      "net": 0
+    },
+    "CISC_P": {
+      "correct": 512,
+      "corrections": 8,
+      "harms": 9,
+      "net": -1
+    },
+    "CISC_V": {
+      "correct": 511,
+      "corrections": 3,
+      "harms": 5,
+      "net": -2
+    },
+    "T_P": {
+      "correct": 513,
+      "corrections": 0,
+      "harms": 0,
+      "net": 0
+    },
+    "W_P": {
+      "correct": 513,
+      "corrections": 0,
+      "harms": 0,
+      "net": 0
+    },
+    "A21_P": {
+      "correct": 513,
+      "corrections": 0,
+      "harms": 0,
+      "net": 0
+    },
+    "A21_F0": {
+      "correct": 513,
+      "corrections": 0,
+      "harms": 0,
+      "net": 0
+    }
+  },
+  "cisc_unrestricted_opportunities": 46,
+  "cisc_effective_tie_opportunities": 0,
+  "scope": "Deterministic parsed-record replay and primary point estimates; original interval estimates are preserved separately."
+}

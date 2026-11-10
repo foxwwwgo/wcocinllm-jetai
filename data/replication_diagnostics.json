@@ -1,0 +1,218 @@
+{
+  "original": {
+    "cells": {
+      "gsm8k:granite": {
+        "n": 300,
+        "valid_seats": 192,
+        "empty_pools": 170,
+        "confidence_failure_pools": 0
+      },
+      "gsm8k:phi": {
+        "n": 300,
+        "valid_seats": 190,
+        "empty_pools": 183,
+        "confidence_failure_pools": 0
+      },
+      "commonsenseqa:granite": {
+        "n": 300,
+        "valid_seats": 441,
+        "empty_pools": 72,
+        "confidence_failure_pools": 0
+      },
+      "commonsenseqa:phi": {
+        "n": 300,
+        "valid_seats": 54,
+        "empty_pools": 250,
+        "confidence_failure_pools": 0
+      }
+    },
+    "totals": {
+      "DEV": {
+        "correct": 392.0,
+        "corrections": 0.0,
+        "harms": 0.0,
+        "net": 0.0
+      },
+      "G64": {
+        "correct": 389.0,
+        "corrections": 4.0,
+        "harms": 7.0,
+        "net": -3.0
+      },
+      "M": {
+        "correct": 392.0,
+        "corrections": 0.0,
+        "harms": 0.0,
+        "net": 0.0
+      },
+      "RANK4": {
+        "correct": 389.0,
+        "corrections": 4.0,
+        "harms": 7.0,
+        "net": -3.0
+      },
+      "RANK64": {
+        "correct": 389.0,
+        "corrections": 5.0,
+        "harms": 8.0,
+        "net": -3.0
+      },
+      "W0": {
+        "correct": 392.0,
+        "corrections": 0.0,
+        "harms": 0.0,
+        "net": 0.0
+      },
+      "W1": {
+        "correct": 391.0,
+        "corrections": 4.0,
+        "harms": 5.0,
+        "net": -1.0
+      },
+      "W16": {
+        "correct": 389.0,
+        "corrections": 4.0,
+        "harms": 7.0,
+        "net": -3.0
+      },
+      "W2": {
+        "correct": 391.0,
+        "corrections": 4.0,
+        "harms": 5.0,
+        "net": -1.0
+      },
+      "W32": {
+        "correct": 389.0,
+        "corrections": 4.0,
+        "harms": 7.0,
+        "net": -3.0
+      },
+      "W4": {
+        "correct": 391.0,
+        "corrections": 4.0,
+        "harms": 5.0,
+        "net": -1.0
+      },
+      "W64": {
+        "correct": 389.0,
+        "corrections": 4.0,
+        "harms": 7.0,
+        "net": -3.0
+      },
+      "W8": {
+        "correct": 391.0,
+        "corrections": 4.0,
+        "harms": 5.0,
+        "net": -1.0
+      }
+    }
+  },
+  "compatibility": {
+    "cells": {
+      "gsm8k:granite": {
+        "n": 300,
+        "valid_seats": 621,
+        "empty_pools": 47,
+        "confidence_failure_pools": 0
+      },
+      "gsm8k:phi": {
+        "n": 300,
+        "valid_seats": 1032,
+        "empty_pools": 4,
+        "confidence_failure_pools": 1
+      },
+      "commonsenseqa:granite": {
+        "n": 300,
+        "valid_seats": 673,
+        "empty_pools": 37,
+        "confidence_failure_pools": 0
+      },
+      "commonsenseqa:phi": {
+        "n": 300,
+        "valid_seats": 516,
+        "empty_pools": 62,
+        "confidence_failure_pools": 0
+      }
+    },
+    "totals": {
+      "DEV": {
+        "correct": 809.0,
+        "corrections": 5.0,
+        "harms": 5.0,
+        "net": 0.0
+      },
+      "G64": {
+        "correct": 803.0,
+        "corrections": 10.0,
+        "harms": 16.0,
+        "net": -6.0
+      },
+      "M": {
+        "correct": 809.0,
+        "corrections": 0.0,
+        "harms": 0.0,
+        "net": 0.0
+      },
+      "RANK4": {
+        "correct": 800.0,
+        "corrections": 10.0,
+        "harms": 19.0,
+        "net": -9.0
+      },
+      "RANK64": {
+        "correct": 802.0,
+        "corrections": 13.0,
+        "harms": 20.0,
+        "net": -7.0
+      },
+      "W0": {
+        "correct": 809.0,
+        "corrections": 0.0,
+        "harms": 0.0,
+        "net": 0.0
+      },
+      "W1": {
+        "correct": 810.0,
+        "corrections": 10.0,
+        "harms": 9.0,
+        "net": 1.0
+      },
+      "W16": {
+        "correct": 802.0,
+        "corrections": 10.0,
+        "harms": 17.0,
+        "net": -7.0
+      },
+      "W2": {
+        "correct": 810.0,
+        "corrections": 10.0,
+        "harms": 9.0,
+        "net": 1.0
+      },
+      "W32": {
+        "correct": 800.0,
+        "corrections": 10.0,
+        "harms": 19.0,
+        "net": -9.0
+      },
+      "W4": {
+        "correct": 810.0,
+        "corrections": 10.0,
+        "harms": 9.0,
+        "net": 1.0
+      },
+      "W64": {
+        "correct": 800.0,
+        "corrections": 10.0,
+        "harms": 19.0,
+        "net": -9.0
+      },
+      "W8": {
+        "correct": 807.0,
+        "corrections": 10.0,
+        "harms": 12.0,
+        "net": -2.0
+      }
+    }
+  }
+}

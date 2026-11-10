@@ -1,0 +1,7 @@
+# Qwen account stop and confidence-request recovery
+
+At 2026-10-24 14:13:55 UTC, Qwen returned HTTP 400 with code/type `Arrearage` (overdue account payment). The frozen collector immediately stopped new scheduling. One confidence request was rejected before any score was produced; its generated candidate had already succeeded. In-flight work completed, leaving 3,869 DeepSeek, 1,514 Qwen and 860 GLM parsed seat records, including the six previously retained exhausted GLM failures.
+
+The single denied confidence-request directory is preserved byte-for-byte in `raw/interruption_history/20261024T141355Z-qwen-400/`, with file hashes in `results/qwen_billing_interruption.json`. No successful generation, successful confidence response or completed parsed record is changed. On resumption, the unchanged per-seat collector reuses this seat's already-generated candidate and may issue its first actual scoring response after the account is restored. It does not regenerate the candidate. The one pre-score denial and any resumed attempts remain part of the same logical request's transport history.
+
+All thirteen originally frozen files and the separately hashed cache-aware resumption wrapper remain unchanged. Resume only after the account issue is resolved. Keep the same models, prompts, parameters, parsing, fallback and independent-batch analysis. Do not inspect partial correctness or alter sample size. No monetary estimates are made.

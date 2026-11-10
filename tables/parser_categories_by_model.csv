@@ -1,0 +1,17 @@
+model,task,category,seats
+granite,commonsenseqa,accepted_compatibility_only,232
+granite,commonsenseqa,accepted_original,441
+granite,commonsenseqa,answer_marker_not_accepted,842
+granite,commonsenseqa,no_accepted_answer_marker,585
+granite,gsm8k,accepted_compatibility_only,429
+granite,gsm8k,accepted_original,192
+granite,gsm8k,answer_marker_not_accepted,1234
+granite,gsm8k,no_accepted_answer_marker,245
+phi,commonsenseqa,accepted_compatibility_only,462
+phi,commonsenseqa,accepted_original,54
+phi,commonsenseqa,answer_marker_not_accepted,983
+phi,commonsenseqa,no_accepted_answer_marker,601
+phi,gsm8k,accepted_compatibility_only,842
+phi,gsm8k,accepted_original,190
+phi,gsm8k,answer_marker_not_accepted,632
+phi,gsm8k,no_accepted_answer_marker,436

@@ -1,0 +1,27 @@
+{
+  "version": "10.15",
+  "source_sha256": {
+    "data/recomputed_statistics.json": "0ca784846d84d4cc8843151717d721100e034c9023c19edb5b90e63059ee5c15",
+    "data/evaluation_rows.json": "0cd0737fe7dcd9255045a93175a83a1a667cafe4348d1ece248199a780dfd58a",
+    "data/replication_rows.json": "d2d9345d98b7a1cd72baca80f71771617b6b9ecb21121aa194da1be455e5d899",
+    "data/replication_extended_parser_rows.json": "611784a50df7ed8760553786f22ea1262bf56c09adc3c51ef14875233ddfff7a",
+    "tables/six_model_recovery_harm.csv": "d77103333e2cc89c32c66a93498e0788bdf8a1241229776631868f7ad7c1aa51",
+    "tables/pool_composition.csv": "137be1d33d863fe9726740265e16ea5d7f8f9dfc3c3756c01f80ecdf9a481e84",
+    "data/confidence_quality.json": "2f305d2025bf5841620229d961b8162281c2709f154d8040bd87643c5401fcec",
+    "data/independent_replication/analysis.json": "208a8ef5c335746c3f1345d698bc9acb475d5da0f01e1a2db44a64a90c98801c",
+    "data/independent_replication/evaluation_rows.json": "84cd3f452cd222102c6dd9be533179c42f536abfa66f8c5684915df10cdec2d6"
+  },
+  "csv_rows": {
+    "figure_2_effects_batches.csv": 6,
+    "figure_2_recovery_harm_batches.csv": 6,
+    "figure_2a_recovery_harm.csv": 3,
+    "figure_2b_effects.csv": 3,
+    "figure_3_concentration.csv": 64,
+    "figure_4_opportunity.csv": 8,
+    "figure_4_reliability.csv": 80,
+    "figure_4_score_quality.csv": 8,
+    "figure_5_pool_composition.csv": 24,
+    "figure_5_six_model_recovery_harm.csv": 48
+  },
+  "verification": "Figure 2a, 3 and 4 point values recomputed from unchanged parsed rows; Figure 2b interval estimates recomputed from question rows; Figure 4 score diagnostics use question-level bootstrap and fixed calibration bins; Figure 5 validated by create_six_model_overview.py; companion pool-composition strata recomputed from all scheduled records. Current Figure 2 has original and independent-generation rows, separately recomputed from their own 600 question clusters; the older Figure 2a/2b CSV files are retained as original-only provenance."
+}

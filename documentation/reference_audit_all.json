@@ -1,0 +1,1034 @@
+{
+  "version": "10.14",
+  "checked_on": "2026-10-23",
+  "total": 37,
+  "existence_verified": 37,
+  "cited_in_body": 37,
+  "appendix_only": 0,
+  "uncited_entries": [],
+  "missing_bibliography_entries": [],
+  "categories": {
+    "formally_published_paper": 29,
+    "preprint_or_technical_report": 5,
+    "model_or_software_record": 3
+  },
+  "method": "Cross-check each bibliography identity against an original publisher, proceedings, arXiv, author or official model/software record. Parse actual citation commands in the included manuscript sources and compare with first-citation bibliography order. This is an existence/publication and citation-coverage audit, not a full replication or a guarantee of every cited conclusion.",
+  "records": [
+    {
+      "number": 1,
+      "key": "wei2022",
+      "title": "Chain-of-thought prompting elicits reasoning in large language models",
+      "authors": "Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and Le, Quoc V. and Zhou, Denny",
+      "year": "2022",
+      "publication": "Advances in Neural Information Processing Systems",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/introduction.tex",
+          "line": 2,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 2,
+      "key": "wang2023",
+      "title": "Self-consistency improves chain of thought reasoning in language models",
+      "authors": "Wang, Xuezhi and Wei, Jason and Schuurmans, Dale and Le, Quoc and Chi, Ed and Narang, Sharan and Chowdhery, Aakanksha and Zhou, Denny",
+      "year": "2023",
+      "publication": "The Eleventh International Conference on Learning Representations",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://openreview.net/pdf?id=1PL1NIMMrw",
+        "https://iclr.cc/media/iclr-2023/Slides/11718.pdf"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/introduction.tex",
+          "line": 2,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        }
+      ],
+      "note": "The web index of the official final PDF identifies ICLR 2023 publication; official conference materials corroborate existence. Direct OpenReview opening presented a browser check.",
+      "supplement_number": null
+    },
+    {
+      "number": 3,
+      "key": "taubenfeld2025",
+      "title": "Confidence improves self-consistency in {LLMs}",
+      "authors": "Taubenfeld, Amir and Sheffer, Tom and Ofek, Eran and Feder, Amir and Goldstein, Ariel and Gekhman, Zorik and Yona, Gal",
+      "year": "2025",
+      "publication": "Findings of the Association for Computational Linguistics: ACL 2025",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2025.findings-acl.1030/"
+      ],
+      "cited": true,
+      "citation_occurrences": 8,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 5,
+          "part": "main"
+        },
+        {
+          "source": "sections/experiments.tex",
+          "line": 75,
+          "part": "main"
+        },
+        {
+          "source": "sections/experiments.tex",
+          "line": 106,
+          "part": "main"
+        },
+        {
+          "source": "sections/introduction.tex",
+          "line": 2,
+          "part": "main"
+        },
+        {
+          "source": "sections/methods.tex",
+          "line": 34,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 12,
+          "part": "main"
+        },
+        {
+          "source": "supplement/wqd.tex",
+          "line": 2,
+          "part": "supplement"
+        }
+      ],
+      "supplement_number": 3
+    },
+    {
+      "number": 4,
+      "key": "kittler1998",
+      "title": "On combining classifiers",
+      "authors": "Kittler, Josef and Hatef, Mohamad and Duin, Robert P. W. and Matas, Jiri",
+      "year": "1998",
+      "publication": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://ieeexplore.ieee.org/abstract/document/667881/",
+        "https://cmp.felk.cvut.cz/~matas/papers/kittler-pami98.pdf"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 3,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 5,
+      "key": "kuncheva2003",
+      "title": "Measures of diversity in classifier ensembles and their relationship with the ensemble accuracy",
+      "authors": "Kuncheva, Ludmila I. and Whitaker, Christopher J.",
+      "year": "2003",
+      "publication": "Machine Learning",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://link.springer.com/article/10.1023/A:1022859003006"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 3,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 6,
+      "key": "cobbe2021gsm8k",
+      "title": "Training verifiers to solve math word problems",
+      "authors": "Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and Hesse, Christopher and Schulman, John",
+      "year": "2021",
+      "publication": "arXiv",
+      "category": "preprint_or_technical_report",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://arxiv.org/abs/2110.14168"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/experiments.tex",
+          "line": 6,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 7,
+      "key": "lightman2024",
+      "title": "Let's verify step by step",
+      "authors": "Lightman, Hunter and Kosaraju, Vineet and Burda, Yuri and Edwards, Harrison and Baker, Bowen and Lee, Teddy and Leike, Jan and Schulman, John and Sutskever, Ilya and Cobbe, Karl",
+      "year": "2024",
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/aca97732e30bcf1303bc22ac3924fd16-Abstract-Conference.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 9,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 8,
+      "key": "petullo2026veccisc",
+      "title": "{VecCISC}: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection",
+      "authors": "Petullo, James and George, Sonny and Cashman, Dylan and Xue, Nianwen",
+      "year": "2026",
+      "publication": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-24",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2026.findings-acl.1305/"
+      ],
+      "doi": "10.18653/v1/2026.findings-acl.1305",
+      "pages": "26184--26200",
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 14,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 9,
+      "key": "ranked2025",
+      "title": "Ranked voting based self-consistency of large language models",
+      "authors": "Wang, Weiqin and Wang, Yile and Huang, Hui",
+      "year": "2025",
+      "publication": "Findings of the Association for Computational Linguistics: ACL 2025",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2025.findings-acl.744/"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 10,
+      "key": "risc2026",
+      "title": "Boosting self-consistency with ranking",
+      "authors": "Marina, Maria and Moskovskiy, Daniil and Pletenev, Sergey and Salnikov, Mikhail and Panchenko, Alexander and Moskvoretskii, Viktor",
+      "year": "2026",
+      "publication": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2026.acl-srw.89.pdf"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 5,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "key": "chen2023usc",
+      "title": "Universal Self-Consistency for Large Language Model Generation",
+      "authors": "Chen, Xinyun and Aksitov, Renat and Alon, Uri and Ren, Jie and Xiao, Kefan and Yin, Pengcheng and Prakash, Sushant and Sutton, Charles and Wang, Xuezhi and Zhou, Denny",
+      "year": "2023",
+      "publication": "arXiv:2311.17311",
+      "category": "preprint_or_technical_report",
+      "existence_verified": true,
+      "checked_on": "2026-10-24",
+      "primary_evidence_urls": [
+        "https://arxiv.org/abs/2311.17311"
+      ],
+      "number": 11,
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 7,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 12,
+      "key": "guo2017",
+      "title": "On calibration of modern neural networks",
+      "authors": "Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.",
+      "year": "2017",
+      "publication": "Proceedings of the 34th International Conference on Machine Learning",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.mlr.press/v70/guo17a.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 13,
+      "key": "jiang2021",
+      "title": "How can we know when language models know? On the calibration of language models for question answering",
+      "authors": "Jiang, Zhengbao and Araki, Jun and Ding, Haibo and Neubig, Graham",
+      "year": "2021",
+      "publication": "Transactions of the Association for Computational Linguistics",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2021.tacl-1.57/"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 14,
+      "key": "lin2022",
+      "title": "Teaching models to express their uncertainty in words",
+      "authors": "Lin, Stephanie and Hilton, Jacob and Evans, Owain",
+      "year": "2022",
+      "publication": "Transactions on Machine Learning Research",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://jmlr.org/tmlr/papers/",
+        "https://owainevans.github.io/",
+        "https://arxiv.org/abs/2205.14334"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "note": "Formal TMLR publication confirmed by the journal\u2019s accepted-papers list (October 2022); author page corroborates publication. Direct OpenReview landing page presented a browser check.",
+      "supplement_number": null
+    },
+    {
+      "number": 15,
+      "key": "tian2023",
+      "title": "Just ask for calibration: strategies for eliciting calibrated confidence scores from language models fine-tuned with human feedback",
+      "authors": "Tian, Katherine and Mitchell, Eric and Zhou, Allan and Sharma, Archit and Rafailov, Rafael and Yao, Huaxiu and Finn, Chelsea and Manning, Christopher",
+      "year": "2023",
+      "publication": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2023.emnlp-main.330/"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 16,
+      "key": "xiong2024",
+      "title": "Can {LLMs} express their uncertainty? An empirical evaluation of confidence elicitation in {LLMs}",
+      "authors": "Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and Li, Yifei and Fu, Jie and He, Junxian and Hooi, Bryan",
+      "year": "2024",
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6733cf15e10e2cd1d59af033c3bb8507-Abstract-Conference.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 17,
+      "key": "lyu2025",
+      "title": "Calibrating large language models with sample consistency",
+      "authors": "Lyu, Qing and Shridhar, Kumar and Malaviya, Chaitanya and Zhang, Li and Elazar, Yanai and Tandon, Niket and Apidianaki, Marianna and Sachan, Mrinmaya and Callison-Burch, Chris",
+      "year": "2025",
+      "publication": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/34120"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 18,
+      "key": "xiao2025",
+      "title": "The consistency hypothesis in uncertainty quantification for large language models",
+      "authors": "Xiao, Quan and Bhattacharjya, Debarun and Ganesan, Balaji and Marinescu, Radu and Mirylenka, Katya and Pham, Nhan H. and Glass, Michael and Lee, Junkyu",
+      "year": "2025",
+      "publication": "Proceedings of the Forty-first Conference on Uncertainty in Artificial Intelligence",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.mlr.press/v286/xiao25a.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 19,
+      "key": "kuhn2023",
+      "title": "Semantic uncertainty: linguistic invariances for uncertainty estimation in natural language generation",
+      "authors": "Kuhn, Lorenz and Gal, Yarin and Farquhar, Sebastian",
+      "year": "2023",
+      "publication": "The Eleventh International Conference on Learning Representations",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://openreview.net/pdf?id=VD-AYtP0dve",
+        "https://iclr.cc/Downloads/2023",
+        "https://arxiv.org/abs/2302.09664"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 10,
+          "part": "main"
+        }
+      ],
+      "note": "The web index of the official final PDF identifies ICLR 2023 publication; official conference materials corroborate existence. Direct OpenReview opening presented a browser check.",
+      "supplement_number": null
+    },
+    {
+      "number": 20,
+      "key": "huang2024",
+      "title": "Large language models cannot self-correct reasoning yet",
+      "authors": "Huang, Jie and Chen, Xinyun and Mishra, Swaroop and Zheng, Huaixiu Steven and Yu, Adams Wei and Song, Xinying and Zhou, Denny",
+      "year": "2024",
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://openreview.net/forum?id=IkmD3fKBPQ",
+        "https://openreview.net/notes/edits/attachment?id=icEN6taw1x&name=pdf"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 3,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 15,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 21,
+      "key": "du2024",
+      "title": "Improving factuality and reasoning in language models through multiagent debate",
+      "authors": "Du, Yilun and Li, Shuang and Torralba, Antonio and Tenenbaum, Joshua B. and Mordatch, Igor",
+      "year": "2024",
+      "publication": "Proceedings of the 41st International Conference on Machine Learning",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.mlr.press/v235/du24e.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 15,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 22,
+      "key": "thirukovalluru2024",
+      "title": "Atomic self-consistency for better long form generations",
+      "authors": "Thirukovalluru, Raghuveer and Huang, Yukun and Dhingra, Bhuwan",
+      "year": "2024",
+      "publication": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2024.emnlp-main.706/"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 3,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 15,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 23,
+      "key": "whendebate2026",
+      "title": "When debate helps: proposal supply and verification-aware readout in multi-agent reasoning",
+      "authors": "Zhao, Zihao and Zhang, Tunyu and Shi, Haizhou and Zhao, Yusong and Zhang, Xinxi and Wang, Hao",
+      "year": "2026",
+      "publication": "arXiv",
+      "category": "preprint_or_technical_report",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://arxiv.org/abs/2610.04686"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 15,
+          "part": "main"
+        },
+        {
+          "source": "sections/theory.tex",
+          "line": 3,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 24,
+      "key": "althoubi2026",
+      "title": "Reasoning concentrates errors, and self-consistency never notices",
+      "authors": "Althoubi, Asaad",
+      "year": "2026",
+      "publication": "arXiv",
+      "category": "preprint_or_technical_report",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://arxiv.org/abs/2609.32035"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 15,
+          "part": "main"
+        }
+      ],
+      "note": "arXiv identifies its DOI as pending registration; the rendered bibliography now links to the accessible arXiv page.",
+      "supplement_number": null
+    },
+    {
+      "number": 25,
+      "key": "sclar2024",
+      "title": "Quantifying language models' sensitivity to spurious features in prompt design or: How {I} learned to start worrying about prompt formatting",
+      "authors": "Sclar, Melanie and Choi, Yejin and Tsvetkov, Yulia and Suhr, Alane",
+      "year": "2024",
+      "publication": "The Twelfth International Conference on Learning Representations",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6c0e99d736da621403018ca7b32b1a4d-Abstract-Conference.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 12,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 17,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 26,
+      "key": "pezeshkpour2024",
+      "title": "Large language models sensitivity to the order of options in multiple-choice questions",
+      "authors": "Pezeshkpour, Pouya and Hruschka, Estevam",
+      "year": "2024",
+      "publication": "Findings of the Association for Computational Linguistics: NAACL 2024",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/2024.findings-naacl.130/"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/discussion.tex",
+          "line": 12,
+          "part": "main"
+        },
+        {
+          "source": "sections/related.tex",
+          "line": 17,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 27,
+      "key": "geifman2017",
+      "title": "Selective classification for deep neural networks",
+      "authors": "Geifman, Yonatan and El-Yaniv, Ran",
+      "year": "2017",
+      "publication": "Advances in Neural Information Processing Systems",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 20,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 28,
+      "key": "hoeffding1963",
+      "title": "Probability inequalities for sums of bounded random variables",
+      "authors": "Hoeffding, Wassily",
+      "year": "1963",
+      "publication": "Journal of the American Statistical Association",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://www.tandfonline.com/doi/abs/10.1080/01621459.1963.10500830"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 20,
+          "part": "main"
+        },
+        {
+          "source": "supplement/proofs.tex",
+          "line": 20,
+          "part": "supplement"
+        }
+      ],
+      "supplement_number": 1
+    },
+    {
+      "number": 29,
+      "key": "angelopoulos2021ltt",
+      "title": "Learn then test: calibrating predictive algorithms to achieve risk control",
+      "authors": "Angelopoulos, Anastasios N. and Bates, Stephen and Cand{\\`e}s, Emmanuel J. and Jordan, Michael I. and Lei, Lihua",
+      "year": "2025",
+      "publication": "The Annals of Applied Statistics",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://www.imstat.org/publications/aoas/aoas_19_2/aoas_19_2.pdf",
+        "https://doi.org/10.1214/24-AOAS1998"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 20,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 30,
+      "key": "thomas2015",
+      "title": "High confidence policy improvement",
+      "authors": "Thomas, Philip and Theocharous, Georgios and Ghavamzadeh, Mohammad",
+      "year": "2015",
+      "publication": "Proceedings of the 32nd International Conference on Machine Learning",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://proceedings.mlr.press/v37/thomas15.html"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 20,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 31,
+      "key": "dror2018",
+      "title": "The hitchhiker's guide to testing statistical significance in natural language processing",
+      "authors": "Dror, Rotem and Baumer, Gili and Shlomov, Segev and Reichart, Roi",
+      "year": "2018",
+      "publication": "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/P18-1128/"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 20,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 32,
+      "key": "holm1979",
+      "title": "A simple sequentially rejective multiple test procedure",
+      "authors": "Holm, Sture",
+      "year": "1979",
+      "publication": "Scandinavian Journal of Statistics",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://www.jstor.org/stable/i412579",
+        "https://www.jstor.org/stable/4615733"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/related.tex",
+          "line": 20,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 33,
+      "key": "talmor2019commonsenseqa",
+      "title": "{CommonsenseQA}: a question answering challenge targeting commonsense knowledge",
+      "authors": "Talmor, Alon and Herzig, Jonathan and Lourie, Nicholas and Berant, Jonathan",
+      "year": "2019",
+      "publication": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+      "category": "formally_published_paper",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://aclanthology.org/N19-1421/"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/experiments.tex",
+          "line": 6,
+          "part": "main"
+        }
+      ],
+      "supplement_number": null
+    },
+    {
+      "number": 34,
+      "key": "qwen25",
+      "title": "{Qwen2.5} technical report",
+      "authors": "{Qwen} and Yang, An and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and others",
+      "year": "2025",
+      "publication": "arXiv",
+      "category": "preprint_or_technical_report",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://arxiv.org/abs/2412.15115"
+      ],
+      "cited": true,
+      "citation_occurrences": 1,
+      "citation_locations": [
+        {
+          "source": "sections/experiments.tex",
+          "line": 8,
+          "part": "main"
+        }
+      ],
+      "note": "2025 is the date of cited version 2 (3 January 2025); version 1 was submitted in December 2024.",
+      "supplement_number": null
+    },
+    {
+      "number": 35,
+      "key": "llamacppsnapshot",
+      "title": "{llama.cpp}: source snapshot 2f729cfa4ca6",
+      "authors": "{ggml-org contributors}",
+      "year": "2026",
+      "publication": "Official project repository",
+      "category": "model_or_software_record",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://github.com/ggml-org/llama.cpp/commit/2f729cfa4ca6f55b8bacf67bb2ba92cb9548e291"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/experiments.tex",
+          "line": 8,
+          "part": "main"
+        },
+        {
+          "source": "supplement/protocol.tex",
+          "line": 9,
+          "part": "supplement"
+        }
+      ],
+      "supplement_number": 2
+    },
+    {
+      "number": 36,
+      "key": "granite33card",
+      "title": "{Granite 3.3 2B Instruct}: official {GGUF} model release",
+      "authors": "{IBM Granite Team}",
+      "year": "2025",
+      "publication": "Official project repository",
+      "category": "model_or_software_record",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/tree/7cdf86ccd1f1bb3491c9b7017b033f2e51367397"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/followup_replication.tex",
+          "line": 2,
+          "part": "main"
+        },
+        {
+          "source": "supplement/protocol.tex",
+          "line": 22,
+          "part": "supplement"
+        }
+      ],
+      "supplement_number": 4
+    },
+    {
+      "number": 37,
+      "key": "phi3ggufcard",
+      "title": "{Phi-3-mini-4k-instruct}: official {GGUF} model release",
+      "authors": "{Microsoft}",
+      "year": "2024",
+      "publication": "Official project repository",
+      "category": "model_or_software_record",
+      "existence_verified": true,
+      "checked_on": "2026-10-23",
+      "primary_evidence_urls": [
+        "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33"
+      ],
+      "cited": true,
+      "citation_occurrences": 2,
+      "citation_locations": [
+        {
+          "source": "sections/followup_replication.tex",
+          "line": 2,
+          "part": "main"
+        },
+        {
+          "source": "supplement/protocol.tex",
+          "line": 22,
+          "part": "supplement"
+        }
+      ],
+      "supplement_number": 5
+    }
+  ],
+  "citation_coverage_rechecked_on": "2026-10-25",
+  "verification_history": {
+    "original_36_existence_checks": "Retained from 23\u201324 October 2026; source evidence listed per record.",
+    "current": "USC arXiv record checked; all 37 citation numbers and positions recomputed on 24 October 2026."
+  },
+  "applies_to_version": "10.19",
+  "current_reference_changes": "WQD origin confirmed against original Definition 6.1; separate document numbering refreshed. All 37 reference records retained.",
+  "cited_in_main": 37,
+  "cited_in_supplement": 5,
+  "v10_17_note": "Bibliography and citations unchanged from v10.16.",
+  "v10_18_note": "Reference metadata, citation keys and reference lists are byte-identical to v10.17; this language edit performs no new bibliographic lookup.",
+  "v10_19_note": "Reference metadata, citation keys and reference lists are byte-identical to v10.18. No new bibliographic lookup in this revision."
+}

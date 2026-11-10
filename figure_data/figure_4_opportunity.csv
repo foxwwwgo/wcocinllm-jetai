@@ -1,0 +1,9 @@
+task,model,model_name,scheduled_questions,majority_errors,correct_class_present,correct_class_absent
+gsm8k,deepseek,DeepSeek-V4.1-Flash,300,9,3,6
+gsm8k,qwen,qwen3.8-max-0902,300,6,2,4
+gsm8k,glm,glm-5.2,300,8,1,7
+gsm8k,open_qwen14b,Qwen2.5-14B-Instruct,300,10,5,5
+commonsenseqa,deepseek,DeepSeek-V4.1-Flash,300,45,23,22
+commonsenseqa,qwen,qwen3.8-max-0902,300,19,8,11
+commonsenseqa,glm,glm-5.2,300,36,18,18
+commonsenseqa,open_qwen14b,Qwen2.5-14B-Instruct,300,40,22,18

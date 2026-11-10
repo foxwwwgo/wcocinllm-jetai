@@ -1,0 +1,623 @@
+{
+  "scope": "descriptive; same complete-pool WQD, question-weighted Brier, fixed bins and question-bootstrap definitions as P0",
+  "cells": {
+    "independent_generation:deepseek:gsm8k": {
+      "scheduled_questions": 300,
+      "scored_candidates": 2100,
+      "missing_candidate_scores": 0,
+      "brier_questions": 300,
+      "brier": 0.02815595238095238,
+      "brier_ci95": [
+        0.01337702380952381,
+        0.045838511904761896
+      ],
+      "wqd_questions": 10,
+      "wqd": 0.6583333333333334,
+      "wqd_ci95": [
+        0.5333333333333333,
+        0.7999999999999999
+      ],
+      "complete_pools": 300,
+      "constant_score_pools": 252,
+      "cross_correctness_score_ties": 36,
+      "cross_correctness_pairs": 66,
+      "reliability": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "candidates": 7,
+          "question_mass": 0.9999999999999998,
+          "confidence": 0.6500000000000001,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "candidates": 45,
+          "question_mass": 6.42857142857143,
+          "confidence": 0.8499999999999994,
+          "accuracy": 0.688888888888889
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "candidates": 2048,
+          "question_mass": 292.5714285714285,
+          "confidence": 0.9965087890625001,
+          "accuracy": 0.9765625000000001
+        }
+      ]
+    },
+    "independent_generation:qwen:gsm8k": {
+      "scheduled_questions": 300,
+      "scored_candidates": 2099,
+      "missing_candidate_scores": 0,
+      "brier_questions": 300,
+      "brier": 0.021649190476190475,
+      "brier_ci95": [
+        0.009382027380952382,
+        0.036588171428571424
+      ],
+      "wqd_questions": 10,
+      "wqd": 0.44666666666666666,
+      "wqd_ci95": [
+        0.3083333333333334,
+        0.5767499999999989
+      ],
+      "complete_pools": 300,
+      "constant_score_pools": 250,
+      "cross_correctness_score_ties": 43,
+      "cross_correctness_pairs": 73,
+      "reliability": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "candidates": 1,
+          "question_mass": 0.14285714285714285,
+          "confidence": 0.4,
+          "accuracy": 1.0
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "candidates": 7,
+          "question_mass": 1.1428571428571428,
+          "confidence": 0.6145833333333334,
+          "accuracy": 0.27083333333333337
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "candidates": 4,
+          "question_mass": 0.5714285714285714,
+          "confidence": 0.7,
+          "accuracy": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "candidates": 18,
+          "question_mass": 2.571428571428571,
+          "confidence": 0.85,
+          "accuracy": 0.611111111111111
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "candidates": 2069,
+          "question_mass": 295.5714285714285,
+          "confidence": 0.9942290961817303,
+          "accuracy": 0.9811503141614305
+        }
+      ]
+    },
+    "independent_generation:glm:gsm8k": {
+      "scheduled_questions": 300,
+      "scored_candidates": 2094,
+      "missing_candidate_scores": 2,
+      "brier_questions": 300,
+      "brier": 0.03512738095238095,
+      "brier_ci95": [
+        0.018815386904761904,
+        0.053853988095238094
+      ],
+      "wqd_questions": 22,
+      "wqd": 0.7462121212121211,
+      "wqd_ci95": [
+        0.6287878787878789,
+        0.8598484848484848
+      ],
+      "complete_pools": 298,
+      "constant_score_pools": 245,
+      "cross_correctness_score_ties": 58,
+      "cross_correctness_pairs": 152,
+      "reliability": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "candidates": 2,
+          "question_mass": 0.2857142857142857,
+          "confidence": 0.0,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "candidates": 1,
+          "question_mass": 0.14285714285714285,
+          "confidence": 0.2,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "candidates": 1,
+          "question_mass": 0.14285714285714285,
+          "confidence": 0.3,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "candidates": 1,
+          "question_mass": 0.14285714285714285,
+          "confidence": 0.4,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "candidates": 2,
+          "question_mass": 0.2857142857142857,
+          "confidence": 0.5,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "candidates": 2,
+          "question_mass": 0.2857142857142857,
+          "confidence": 0.6,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "candidates": 24,
+          "question_mass": 3.4285714285714284,
+          "confidence": 0.8499999999999999,
+          "accuracy": 0.5833333333333333
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "candidates": 2061,
+          "question_mass": 295.28571428571416,
+          "confidence": 0.9971214320270925,
+          "accuracy": 0.9675858732462507
+        }
+      ]
+    },
+    "independent_generation:deepseek:commonsenseqa": {
+      "scheduled_questions": 300,
+      "scored_candidates": 2100,
+      "missing_candidate_scores": 0,
+      "brier_questions": 300,
+      "brier": 0.12433452380952381,
+      "brier_ci95": [
+        0.09909773809523809,
+        0.15060851190476188
+      ],
+      "wqd_questions": 67,
+      "wqd": 0.5713930348258707,
+      "wqd_ci95": [
+        0.4987562189054726,
+        0.6430348258706468
+      ],
+      "complete_pools": 300,
+      "constant_score_pools": 142,
+      "cross_correctness_score_ties": 266,
+      "cross_correctness_pairs": 562,
+      "reliability": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "candidates": 17,
+          "question_mass": 2.4285714285714284,
+          "confidence": 0.2,
+          "accuracy": 0.823529411764706
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "candidates": 11,
+          "question_mass": 1.5714285714285712,
+          "confidence": 0.30000000000000004,
+          "accuracy": 0.5454545454545454
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "candidates": 10,
+          "question_mass": 1.4285714285714284,
+          "confidence": 0.4,
+          "accuracy": 0.2
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "candidates": 3,
+          "question_mass": 0.42857142857142855,
+          "confidence": 0.5,
+          "accuracy": 1.0
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "candidates": 109,
+          "question_mass": 15.571428571428564,
+          "confidence": 0.6486238532110097,
+          "accuracy": 0.3853211009174313
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "candidates": 588,
+          "question_mass": 83.99999999999997,
+          "confidence": 0.8500000000000003,
+          "accuracy": 0.7023809523809526
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "candidates": 1362,
+          "question_mass": 194.5714285714285,
+          "confidence": 0.9590675477239357,
+          "accuracy": 0.9397944199706314
+        }
+      ]
+    },
+    "independent_generation:qwen:commonsenseqa": {
+      "scheduled_questions": 300,
+      "scored_candidates": 2100,
+      "missing_candidate_scores": 0,
+      "brier_questions": 300,
+      "brier": 0.06612347619047618,
+      "brier_ci95": [
+        0.04406842976190477,
+        0.09005376666666667
+      ],
+      "wqd_questions": 23,
+      "wqd": 0.5608695652173913,
+      "wqd_ci95": [
+        0.42391304347826086,
+        0.6902173913043478
+      ],
+      "complete_pools": 300,
+      "constant_score_pools": 121,
+      "cross_correctness_score_ties": 77,
+      "cross_correctness_pairs": 200,
+      "reliability": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "candidates": 3,
+          "question_mass": 0.42857142857142855,
+          "confidence": 0.3,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "candidates": 2,
+          "question_mass": 0.2857142857142857,
+          "confidence": 0.4,
+          "accuracy": 1.0
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "candidates": 0,
+          "question_mass": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "candidates": 5,
+          "question_mass": 0.7142857142857142,
+          "confidence": 0.61,
+          "accuracy": 1.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "candidates": 4,
+          "question_mass": 0.5714285714285714,
+          "confidence": 0.7,
+          "accuracy": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "candidates": 56,
+          "question_mass": 7.999999999999998,
+          "confidence": 0.8500000000000002,
+          "accuracy": 0.6607142857142857
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "candidates": 2030,
+          "question_mass": 289.9999999999999,
+          "confidence": 0.976147783251232,
+          "accuracy": 0.9339901477832513
+        }
+      ]
+    },
+    "independent_generation:glm:commonsenseqa": {
+      "scheduled_questions": 300,
+      "scored_candidates": 2097,
+      "missing_candidate_scores": 1,
+      "brier_questions": 300,
+      "brier": 0.11159865079365079,
+      "brier_ci95": [
+        0.08815530753968255,
+        0.13749058333333333
+      ],
+      "wqd_questions": 66,
+      "wqd": 0.5997474747474748,
+      "wqd_ci95": [
+        0.5209595959595961,
+        0.6732354797979798
+      ],
+      "complete_pools": 299,
+      "constant_score_pools": 106,
+      "cross_correctness_score_ties": 176,
+      "cross_correctness_pairs": 564,
+      "reliability": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "candidates": 3,
+          "question_mass": 0.42857142857142855,
+          "confidence": 0.0,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "candidates": 1,
+          "question_mass": 0.2,
+          "confidence": 0.15,
+          "accuracy": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "candidates": 29,
+          "question_mass": 4.257142857142857,
+          "confidence": 0.20000000000000004,
+          "accuracy": 0.5503355704697985
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "candidates": 7,
+          "question_mass": 1.114285714285714,
+          "confidence": 0.3,
+          "accuracy": 0.17948717948717952
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "candidates": 28,
+          "question_mass": 3.9999999999999996,
+          "confidence": 0.40178571428571436,
+          "accuracy": 0.5000000000000001
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "candidates": 45,
+          "question_mass": 6.42857142857143,
+          "confidence": 0.53,
+          "accuracy": 0.24444444444444435
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "candidates": 40,
+          "question_mass": 5.7142857142857135,
+          "confidence": 0.6,
+          "accuracy": 0.55
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "candidates": 11,
+          "question_mass": 1.5714285714285712,
+          "confidence": 0.7272727272727274,
+          "accuracy": 0.4545454545454546
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "candidates": 330,
+          "question_mass": 47.28571428571428,
+          "confidence": 0.85,
+          "accuracy": 0.6701913393756294
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "candidates": 1603,
+          "question_mass": 228.99999999999994,
+          "confidence": 0.9662819713038053,
+          "accuracy": 0.9307548346849657
+        }
+      ]
+    }
+  }
+}

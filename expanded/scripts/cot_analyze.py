@@ -1,6 +1,7 @@
 import os
 # -*- coding: utf-8 -*-
-"""CoT 消融的校准分析：准确率、平均置信、Brier、ECE、过度自信缺口，按题聚类自助。"""
+"""Calibration analysis of the CoT ablation: accuracy, mean confidence, Brier, ECE, overconfidence gap,
+question-clustered bootstrap."""
 import json, random, collections, statistics
 
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -42,7 +43,7 @@ for m in modes:
     print(f"{m:12s} {st['n']:4d} {st['acc']:6.3f} {st['conf']:6.3f} {st['gap']:+6.3f} "
           f"{st['brier']:6.3f} {st['ece']:6.3f} {st['tokens']:7.0f}")
 
-# 按题聚类自助：gap 差值、Brier 差值
+# Question-clustered bootstrap: gap difference, Brier difference
 by_q = collections.defaultdict(lambda: collections.defaultdict(list))
 for r in rows:
     by_q[r["qid"]][r["mode"]].append(r)
@@ -59,4 +60,4 @@ for _ in range(5000):
     dacc.append(sa["acc"] - sb["acc"])
 for name, v in (("gap(full-restricted)", dgap), ("Brier(full-restricted)", dbrier), ("acc(full-restricted)", dacc)):
     v.sort()
-    print(f"{name:24s} 点估计 {statistics.mean(v):+.3f}  95%CI [{v[int(.025*len(v))]:+.3f}, {v[int(.975*len(v))]:+.3f}]")
+    print(f"{name:24s} point est {statistics.mean(v):+.3f}  95%CI [{v[int(.025*len(v))]:+.3f}, {v[int(.975*len(v))]:+.3f}]")

@@ -1,10 +1,11 @@
 import os
 # -*- coding: utf-8 -*-
-"""扩容集上的保形覆盖复核与设计效应。
+"""Conformal-coverage review and design effect on the scale-up set.
 
-1) 按题 5 折交叉拟合，检查 α=0.05/0.10/0.20 的经验覆盖率是否达到名义值
-2) 同一统计量（金标落在候选池内的比例），分别用按记录 i.i.d. 自助与按题聚类自助
-   重采样，比较 95% 区间宽度，检验 m 从 3 降到 2 后收窄比例是否从 16% 降到约 9%
+1) 5-fold cross-fit by question; check whether empirical coverage at alpha=0.05/0.10/0.20 reaches the nominal level
+2) Same statistic (fraction of gold falling within the candidate pool), using record-level i.i.d. bootstrap vs
+   question-clustered bootstrap for resampling, compare 95% interval widths, test whether the narrowing ratio
+   drops from ~16% to ~9% when m goes from 3 to 2
 """
 import json, random, math, collections
 
@@ -28,7 +29,7 @@ def quant(v, a):
 
 
 def coverage(pools, scoremap, a, seed=20261108):
-    """金标候选的保形分数是否落在分位数阈值之内。"""
+    """Whether the conformal score of the gold candidate falls within the quantile threshold."""
     qs = sorted({p["qid"] for p in pools})
     rng = random.Random(seed)
     q = qs[:]
@@ -57,7 +58,7 @@ def coverage(pools, scoremap, a, seed=20261108):
 
 
 def width_compare(groups, draws=2000, seed=7):
-    """聚类自助 vs 记录级自助，同一统计量的 95% 区间宽度。"""
+    """Clustered bootstrap vs record-level bootstrap: 95% interval width of the same statistic."""
     rng = random.Random(seed)
     keys = list(groups)
     cl = []
@@ -84,19 +85,19 @@ QW = load_scores("qwen14b", "xscores_")
 SELF = {f"{p['qid']}|{p['model']}|{p['gold']}": p["scores"][p["gold"]]
         for p in pools if p["gold"] in p["scores"]}
 
-print("== 扩容集保形覆盖（2,400 题 × 2 模型）")
+print("== Scale-up set conformal coverage (2,400 questions x 2 models)")
 print(f"{'signal':14s} {'alpha':>6s} {'coverage':>9s} {'n':>6s}")
 for name, sc in (("self", SELF), ("qwen judge", QW)):
     for a in (0.05, 0.10, 0.20):
         h, t = coverage(pools, sc, a)
         print(f"{name:14s} {a:6.2f} {h/t:9.3f} {t:6d}")
 
-print("\n== 设计效应（金标在池内的比例）")
-for label, ps in (("扩容 m=2", pools), ("原 600 m=3", led)):
+print("\n== Design effect (fraction of gold within pool)")
+for label, ps in (("scale-up m=2", pools), ("orig 600 m=3", led)):
     gr = collections.defaultdict(list)
     for p in ps:
         gr[p.get("qid") or p["id"]].append(1 if p["gold"] in p["counts"] else 0)
     w_cl, w_ii, red = width_compare(gr)
     m = sum(len(v) for v in gr.values()) / len(gr)
-    print(f"{label:12s} 聚类区间宽 {w_cl:.4f}  记录级 {w_ii:.4f}  收窄 {100*red:.1f}%  "
-          f"(每题平均 {m:.1f} 条)")
+    print(f"{label:12s} clustered width {w_cl:.4f}  record-level {w_ii:.4f}  narrowing {100*red:.1f}%  "
+          f"(avg {m:.1f} per question)")

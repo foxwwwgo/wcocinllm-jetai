@@ -1,7 +1,7 @@
 import os
 # -*- coding: utf-8 -*-
-"""在 209 个竞争池上比较三种信号：自评置信度 / Phi-3-mini / Qwen2.5-14B。
-判决单元：是否把多数答案改判给分数最高的少数簇。"""
+"""Compare three signals across 209 competition pools: self-confidence / Phi-3-mini / Qwen2.5-14B.
+Decision unit: whether to reassign the majority answer to the highest-scoring minority cluster."""
 import json, math, random, collections, statistics, sys
 
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -48,7 +48,7 @@ SIG = {"self": self_scores,
        "phi3":  lambda r: ext_scores(r, PHI),
        "qwen14b": lambda r: ext_scores(r, QW)}
 
-print("== 信号判别力（209 竞争池，改写正确与否）")
+print("== Signal discriminative power (209 competition pools, rewrite correct or not)")
 for name, fn in SIG.items():
     pos, neg, n_ok = [], [], 0
     for r in ledger:
@@ -62,7 +62,7 @@ for name, fn in SIG.items():
         (pos if kmax == r["gold"] else neg).append(smax - smaj)
     print(f"  {name:8s} n={n_ok} AUC(margin)={auc(pos,neg):.3f}  correct={len(pos)} wrong={len(neg)}")
 
-print("\n== 阈值规则：备选簇分数 > 多数簇 即改判")
+print("\n== Threshold rule: alternative cluster score > majority cluster -> reassign")
 for name, fn in SIG.items():
     C = H = W = n = 0
     for r in ledger:

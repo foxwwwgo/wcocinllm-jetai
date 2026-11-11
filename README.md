@@ -78,7 +78,7 @@ refers to them. The archived console outputs were relabelled after the runs; the
 and tests are unchanged.
 
 The generator is the same model again: `expanded/scripts/gen_pipeline.py` calls
-`deepseek-v4-flash`, which the provider resolves to the same backend. Section 6.3 of the manuscript
+`deepseek-flash`, which the provider resolves to the same backend. Section 6.3 of the manuscript
 states the consequence — 76 of the 209 primary pools are checked by a same-model cross-examination.
 
 ## Paths in the collection scripts

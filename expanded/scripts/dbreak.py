@@ -1,9 +1,11 @@
 import os
 # -*- coding: utf-8 -*-
-"""按任务类型（GSM8K 算式 / CommonsenseQA 多选）拆分各信号的判别力与纠错-致错平衡。
+"""Split each signal's discriminative power and correct-fix vs harm trade-off by task type
+(GSM8K arithmetic / CommonsenseQA multiple-choice).
 
-动机：全样本上 DeepSeek 非思考评判的候选级 AUC 只有 0.505，但 GSM 子集上是 0.744，
-CSQA 子集上有 96% 的候选被打 100。两类题面的行为差异是可报告的结果，而不是噪声。
+Motivation: on the full sample the DeepSeek non-thinking judge's candidate-level AUC is only 0.505,
+but 0.744 on the GSM subset and 96% of CSQA candidates are scored 100. The behavioral difference
+between the two item types is a reportable result, not noise.
 """
 import json, collections, math
 

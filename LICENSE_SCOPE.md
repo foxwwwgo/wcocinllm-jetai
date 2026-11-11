@@ -1,6 +1,6 @@
 # License scope
 
-Effective date: 2026-10-25. This release uses different licenses for different materials; it is not a dual-license choice for every file.
+This release uses different licenses for different materials; it is not a dual-license choice for every file.
 
 | Material | Applicable grant |
 |---|---|
@@ -18,4 +18,4 @@ In mixed files, the grant is component-specific, not a claim to own all strings 
 
 Frozen experimental files are deliberately unchanged. For example, the historical statement about awaiting author license review in `protocols/cisc/study_protocol.json` records the status at the experimental freeze, not a current pending license selection. `LICENSE_SELECTION.md` records the present decision. No frozen hash or experiment record has been rewritten to add license headers.
 
-`documentation/license_scope.json` maps every supplied file to a scope category. For mixed-content files the category covers only the original contribution; the exclusions above continue to apply. `SHA256SUMS` verifies the delivered files.
+`documentation/license_scope.json` maps every supplied file to a scope category. For mixed-content files the category covers only the original contribution; the exclusions above continue to apply. 

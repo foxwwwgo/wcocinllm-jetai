@@ -1,0 +1,12 @@
+== Scale-up set conformal coverage (2,400 questions x 2 models)
+signal          alpha  coverage      n
+self             0.05     0.952   4198
+self             0.10     0.951   4198
+self             0.20     0.802   4198
+qwen judge       0.05     0.959   4235
+qwen judge       0.10     0.949   4235
+qwen judge       0.20     0.949   4235
+
+== Design effect (fraction of gold within pool)
+scale-up m=2       clustered width 0.0202  record-level 0.0190  narrowing 6.2%  (avg 2.0 per question)
+orig 600 m=3       clustered width 0.0256  record-level 0.0178  narrowing 30.4%  (avg 3.0 per question)

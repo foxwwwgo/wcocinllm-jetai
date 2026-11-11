@@ -1,16 +1,16 @@
 import os
 # -*- coding: utf-8 -*-
-"""回答三个复核问题：
-  A. α=0.10 的覆盖率点估计与区间半宽（原 1,732 条 vs 扩容 ~4,200 条），按题聚类自助
-  B. N=3/5/7 路径数扫描（在扩容的 7 条路径上取前 N 条重算）
-  C. 生成器参数量与自评置信度（granite 2B / phi 3.8B）
+"""Answer three review questions:
+  A. alpha=0.10 coverage point estimate and interval half-width (original 1,732 entries vs scale-up ~4,200), question-clustered bootstrap
+  B. N=3/5/7 path-count scan (take first N of the 7 scale-up paths and recompute)
+  C. Generator parameter count vs self-confidence (granite 2B / phi 3.8B)
 """
 import json, random, math, collections, glob
 
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
-# ---------- A. 覆盖率 ----------
+# ---------- A. Coverage ----------
 def quant(v, a):
     v = sorted(v)
     k = math.ceil((len(v) + 1) * (1 - a))
@@ -18,7 +18,7 @@ def quant(v, a):
 
 
 def covered_flags(gold_score, qids, a, seed=20261108):
-    """按题 5 折交叉拟合，返回每题覆盖指示（记录级展开）。"""
+    """5-fold cross-fit by question; return per-question coverage indicator (record-level expansion)."""
     uniq = sorted(set(qids))
     rng = random.Random(seed)
     q = uniq[:]
@@ -71,16 +71,16 @@ for l in open(f"{BASE}/out/xscores_qwen14b.jsonl"):
 QW_EXP = [(QW[f"{p['qid']}|{p['model']}|{p['gold']}"], p["qid"]) for p in pools
           if f"{p['qid']}|{p['model']}|{p['gold']}" in QW]
 
-print("== A. α=0.10 覆盖率（按题聚类自助 5000 次）")
-print(f"{'数据集/信号':28s} {'n记录':>6s} {'n题':>5s} {'覆盖率':>7s} {'误覆盖':>7s} {'95%CI':>18s} {'半宽':>6s}")
-for name, data in (("原 600 题 / 自评", SELF_LED), ("扩容 / 自评", SELF_EXP), ("扩容 / Qwen judge", QW_EXP)):
+print("== A. alpha=0.10 coverage (question-clustered bootstrap, 5000 reps)")
+print(f"{'dataset/signal':28s} {'nrec':>6s} {'nq':>5s} {'coverage':>7s} {'miscover':>7s} {'95%CI':>18s} {'halfW':>6s}")
+for name, data in (("orig 600q / self", SELF_LED), ("scale-up / self", SELF_EXP), ("scale-up / Qwen judge", QW_EXP)):
     fl = covered_flags(data, [q for _, q in data], 0.10)
     c, lo, hi, n, nq = cluster_ci(fl)
     print(f"{name:28s} {n:6d} {nq:5d} {c:7.3f} {1-c:7.3f} "
           f"[{lo:.3f},{hi:.3f}]".rjust(19) + f" {100*(hi-lo)/2:5.2f}pp")
 
-# ---------- B. N 扫描 ----------
-print("\n== B. N=3/5/7 路径扫描（扩容，取前 N 条路径重算）")
+# ---------- B. N scan ----------
+print("\n== B. N=3/5/7 path scan (scale-up, take first N paths and recompute)")
 rows = collections.defaultdict(list)
 for f in glob.glob(f"{BASE}/out/gen_*_1200.jsonl"):
     for l in open(f):
@@ -93,7 +93,7 @@ for f in ("gsm_q1200.json", "csqa_q1200.json"):
     for r in json.load(open(f"{BASE}/data/{f}")):
         Q[r["id"]] = r["gold"]
 
-print(f"{'N':>2s} {'池':>5s} {'竞争池':>6s} {'多数票正确':>9s} {'改判':>5s} {'C':>4s} {'H':>4s} {'eta':>6s}")
+print(f"{'N':>2s} {'pool':>5s} {'comp':>6s} {'majok':>9s} {'sw':>5s} {'C':>4s} {'H':>4s} {'eta':>6s}")
 for N in (3, 5, 7):
     cnt_pool = comp = 0
     majok = 0
@@ -132,8 +132,8 @@ for N in (3, 5, 7):
     print(f"{N:2d} {cnt_pool:5d} {comp:6d} {100*majok/max(comp,1):8.1f}% {sw:5d} {C:4d} {H:4d} "
           f"{(C/H if H else float('nan')):6.2f}")
 
-# ---------- C. 参数量 ----------
-print("\n== C. 生成器参数量与自评置信度（扩容，N=7）")
+# ---------- C. Parameter count ----------
+print("\n== C. Generator parameter count vs self-confidence (scale-up, N=7)")
 for model, size in (("granite", "2B"), ("phi", "3.8B")):
     C = H = sw = comp = majok = 0
     for (qid, m), rs in rows.items():
@@ -167,6 +167,6 @@ for model, size in (("granite", "2B"), ("phi", "3.8B")):
                 C += 1
             elif maj == Q[qid]:
                 H += 1
-    print(f"  {model:8s} {size:5s} 池={len([1 for (q,m) in rows if m==model])} 竞争={comp} "
-          f"多数票正确={100*majok/max(comp,1):.1f}% 改判={sw} C={C} H={H} "
+    print(f"  {model:8s} {size:5s} pool={len([1 for (q,m) in rows if m==model])} comp={comp} "
+          f"majok={100*majok/max(comp,1):.1f}% sw={sw} C={C} H={H} "
           f"eta={(C/H if H else float('nan')):.2f}")

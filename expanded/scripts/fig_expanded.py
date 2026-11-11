@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""扩容集信号对比图：纠正与损害分组条形，右侧标注 eta_adj。
+"""Scale-up set signal comparison chart: grouped bars for corrected vs harmed, with eta_adj labeled on the right.
 
-灰度与色盲友好：纠正为深色实心，损害为白底斜线，不依赖色相区分。
+Grayscale and colorblind friendly: corrected is dark solid, harmed is white with diagonal hatching,
+distinguished without relying on hue.
 """
 import json, os
 import matplotlib

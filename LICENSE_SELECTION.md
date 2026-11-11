@@ -1,6 +1,6 @@
 # License decision applied
 
-Decision date: 2026-10-25. The authors selected and authorized the following licenses; selection is complete.
+The authors selected and authorized the following licenses; selection is complete.
 
 - Original code: MIT, supplied in `LICENSE`.
 - Original data and explanatory documents: CC BY 4.0, supplied in `LICENSE-DATA` and `LICENSES/CC-BY-4.0.txt`.

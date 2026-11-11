@@ -1,6 +1,6 @@
 import os
 # -*- coding: utf-8 -*-
-"""从生成结果构建池、多数票与跨族评分任务。"""
+"""Build pools, majority votes, and cross-family scoring tasks from generation results."""
 import json, collections, glob, os
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 Q={}

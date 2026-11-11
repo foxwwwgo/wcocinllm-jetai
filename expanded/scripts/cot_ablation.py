@@ -1,8 +1,9 @@
 import os
 # -*- coding: utf-8 -*-
-"""思考剥夺消融：Prompt 级长度控制（非硬截断），隔离解析率与准确率。
+"""Chain-of-thought deprivation ablation: prompt-level length control (not hard truncation),
+isolating parse rate and accuracy.
 
-用法: cot_ablation.py <port> <n_questions> <paths_per_q> <workers>
+Usage: cot_ablation.py <port> <n_questions> <paths_per_q> <workers>
 """
 import json, re, sys, time, threading, requests
 from concurrent.futures import ThreadPoolExecutor

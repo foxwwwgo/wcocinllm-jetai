@@ -1,7 +1,7 @@
 import os
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # -*- coding: utf-8 -*-
-"""构造跨族评分任务：题面 + 候选答案 -> 待打分。"""
+"""Construct cross-family scoring tasks: item text + candidate answer -> to-be-scored."""
 import json, os
 import pandas as pd
 

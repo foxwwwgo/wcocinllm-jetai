@@ -1,0 +1,6 @@
+mode            n    acc   conf    gap  Brier    ECE  tokens
+full          600  0.860  0.952 +0.092  0.130  0.097     275
+restricted    600  0.335  0.585 +0.250  0.347  0.333       9
+gap(full-restricted)     point est -0.158  95%CI [-0.234, -0.081]
+Brier(full-restricted)   point est -0.217  95%CI [-0.268, -0.165]
+acc(full-restricted)     point est +0.526  95%CI [+0.457, +0.593]

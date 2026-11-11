@@ -1,6 +1,6 @@
 import os
 # -*- coding: utf-8 -*-
-"""独立解题（适配会先输出推理的模型），可断点续跑。"""
+"""Independent solving (adapted for models that emit reasoning first), resumable."""
 import json, re, os, sys, time, threading, requests
 from concurrent.futures import ThreadPoolExecutor
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

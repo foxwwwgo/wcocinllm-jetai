@@ -1,0 +1,3 @@
+mode           n  parse%  acc(parsed)  meanConf(all) meanConf(parsed)  meanTok
+full         600  100.0%        86.0%          95.2            95.2     275
+restricted   600  100.0%        33.5%          58.5            58.5       9

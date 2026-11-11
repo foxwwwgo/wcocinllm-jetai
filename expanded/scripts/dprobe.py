@@ -1,13 +1,14 @@
 import os
 # -*- coding: utf-8 -*-
-"""两项稳健性探针。
+"""Two robustness probes.
 
-A. 解题 token 预算：DeepSeek 在 max_tokens=400 下 GSM8K 只有 86%，怀疑被截断。
-   用 1500 tokens 重跑 GSM8K 子集，看准确率是否回升。
-B. 评判饱和：DeepSeek 非思考模式在标准提示下 73.6% 的候选被打 100，候选级 AUC 0.505。
-   换两种更严格的措辞，看饱和是否消失——若消失，说明是提示问题；若依旧，说明是模型行为。
+A. Solve token budget: DeepSeek at max_tokens=400 reaches only 86% on GSM8K; suspected truncation.
+   Re-run the GSM8K subset at 1500 tokens to see if accuracy recovers.
+B. Judge saturation: DeepSeek non-thinking mode scores 73.6% of candidates 100 under the standard prompt,
+   candidate-level AUC 0.505. Try two stricter phrasings to see whether saturation disappears -- if it does,
+   it is a prompt issue; if not, it is model behavior.
 
-用法: python dprobe.py A|B [n]
+Usage: python dprobe.py A|B [n]
 """
 import json, re, sys, time, threading, random, requests, collections
 from concurrent.futures import ThreadPoolExecutor
@@ -84,7 +85,7 @@ if MODE == "A":
           f"mean chars {sum(r['chars'] for r in rows)/len(rows):.0f}")
 
 elif MODE == "C":
-    # CSQA：候选只给字母 vs 字母+选项原文，检验评判饱和是否源于呈现方式
+    # CSQA: candidate given letter only vs letter + option text; test whether judge saturation comes from presentation
     rng = random.Random(20261108)
     pool = {}
     for t in TASKS:
@@ -135,7 +136,7 @@ elif MODE == "C":
     pos = [std[t["key"]] for t in s if str(t["candidate"]).strip().upper() == str(gold[t["id"]]).strip().upper()]
     neg = [std[t["key"]] for t in s if str(t["candidate"]).strip().upper() != str(gold[t["id"]]).strip().upper()]
     w = sum(1 if p > n else .5 if p == n else 0 for p in pos for n in neg)
-    print(f"letter only(同子集): n={len(vals)} sat100={100*sum(1 for v in vals if v==100)/len(vals):.1f}% "
+    print(f"letter only(same subset): n={len(vals)} sat100={100*sum(1 for v in vals if v==100)/len(vals):.1f}% "
           f"mean={sum(vals)/len(vals):.1f} AUC={w/(len(pos)*len(neg)):.3f}")
 
 else:
@@ -167,7 +168,7 @@ else:
         sat = 100 * sum(1 for v in vals if v == 100) / len(vals)
         print(f"  n={len(vals)} sat100={sat:.1f}% mean={sum(vals)/len(vals):.1f} AUC={a:.3f}")
 
-    # 标准提示在同一子集上的表现
+    # Standard prompt performance on the same subset
     std = {}
     for l in open(f"{BASE}/out/scores_deepseek.jsonl"):
         r = json.loads(l)
@@ -177,5 +178,5 @@ else:
     neg = [std[t["key"]] for t in sub_rows if t["candidate"] != gold[t["id"]]]
     w = sum(1 if p > n else .5 if p == n else 0 for p in pos for n in neg)
     vals = [std[t["key"]] for t in sub_rows]
-    print(f"variant standard(同子集): n={len(vals)} sat100={100*sum(1 for v in vals if v==100)/len(vals):.1f}% "
+    print(f"variant standard(same subset): n={len(vals)} sat100={100*sum(1 for v in vals if v==100)/len(vals):.1f}% "
           f"mean={sum(vals)/len(vals):.1f} AUC={w/(len(pos)*len(neg)):.3f}")

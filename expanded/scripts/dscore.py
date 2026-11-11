@@ -1,19 +1,20 @@
 import os
 # -*- coding: utf-8 -*-
-"""DeepSeek API 作为跨族独立信号：judge（给候选答案打 0-100 概率）与 solve（独立解题）。
+"""DeepSeek API as a cross-family independent signal: judge (scores candidate answers 0-100 probability)
+and solve (solves independently).
 
-用法:
+Usage:
   python dscore.py judge tasks.jsonl <tag> [workers]
   python dscore.py solve tasks.jsonl <tag> [workers]
 
-输出:
-  out/scores_<tag>.jsonl   judge -> {"key":..., "score": int, "raw": 末 120 字符}
+Outputs:
+  out/scores_<tag>.jsonl   judge -> {"key":..., "score": int, "raw": last 120 chars}
   out/solve_<tag>.jsonl    solve -> {"id":..., "answer": str, "model": ...}
 
-环境变量:
-  DS_MODEL     默认 deepseek-chat，可设 deepseek-reasoner
-  DS_SOLVE_MT  解题的 max_tokens，默认 400（推理模型建议 1500-4000）
-密钥从 BASE/.dskey 读取，不落日志。
+Environment variables:
+  DS_MODEL      default deepseek-chat; can be set to deepseek-reasoner
+  DS_SOLVE_MT   solve max_tokens, default 400 (reasoning models suggest 1500-4000)
+The API key is read from BASE/.dskey and is not logged.
 """
 import json, re, os, sys, time, threading, requests
 from concurrent.futures import ThreadPoolExecutor
@@ -43,7 +44,7 @@ SOLVE_PROMPT = (
 OUT = f"{BASE}/out/{'scores' if MODE == 'judge' else 'solve'}_{TAG}.jsonl"
 tasks = [json.loads(l) for l in open(tasks_path)]
 
-# 解题按题去重（旧任务文件用 id，扩容文件用 qid）
+# Dedup solving by question (old task files use id, scale-up files use qid)
 if MODE == "solve":
     uniq = {}
     for t in tasks:
@@ -107,13 +108,13 @@ def call(prompt, max_tokens):
 
 
 def one(t):
-    """返回 (值, 原文尾部)；值在 judge 为 0-100 整数，在 solve 为答案解析结果。"""
+    """Return (value, raw tail); value is a 0-100 integer for judge, the answer parse result for solve."""
     opts = ("\nOptions:\n" + t["options"]) if t.get("options") else ""
     if MODE == "judge":
         txt = call(JUDGE_PROMPT.format(question=t["question"], options=opts, candidate=t["candidate"]), JUDGE_MT)
         if txt is None:
             return None, None
-        # 取最后一个 0-100 的独立整数：推理模型会把步骤编号写在前面
+        # Take the last standalone 0-100 integer: reasoning models write step numbers first
         cands = [int(x) for x in re.findall(r"(?<![\d.])\d{1,3}(?![\d.])", txt) if int(x) <= 100]
         v = cands[-1] if cands else None
         return v, (txt.strip().replace("\n", " ")[-120:])

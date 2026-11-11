@@ -1,0 +1,24 @@
+=== Vote-margin bins (scale-up set)
+
+scale-up / Qwen-14B solver
+margin    sw    C    H     eta
+     0    79   63    4   15.75
+     1   198  155   32    4.84
+     2    96   66   15    4.40
+     3   132   99   20    4.95
+     4    46   36    6    6.00
+     5    98   72   22    3.27
+
+scale-up / DeepSeek solver (non-thinking)
+margin    sw    C    H     eta
+     0    92   76    6   12.67
+     1   214  177   27    6.56
+     2   109   88   14    6.29
+     3   131  111   13    8.54
+     4    41   39    1   39.00
+     5   113   88   21    4.19
+
+=== Majority-correct rate at the moment of disagreement
+scale-up / Qwen-14B solver           n=  649 q= 560  P= 15.3%  95%CI [12.4, 18.4]
+scale-up / DeepSeek solver (non-thinking)        n=  700 q= 597  P= 11.7%  95%CI [9.2, 14.4]
+orig 600q / Qwen-14B solver      n=   59 q=  41  P= 49.2%  95%CI [32.8, 65.0]

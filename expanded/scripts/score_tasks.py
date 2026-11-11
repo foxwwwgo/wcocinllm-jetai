@@ -1,7 +1,7 @@
 import os
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # -*- coding: utf-8 -*-
-"""用 llama-server 的 OpenAI 兼容接口给候选答案打分（0-100），可断点续跑。"""
+"""Score candidate answers (0-100) via llama-server's OpenAI-compatible API, resumable."""
 import json, os, re, sys, time, threading
 import requests
 from concurrent.futures import ThreadPoolExecutor

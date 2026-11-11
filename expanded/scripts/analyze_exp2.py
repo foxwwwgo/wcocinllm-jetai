@@ -1,8 +1,8 @@
 import os
 # -*- coding: utf-8 -*-
-"""扩容数据（2,400 题 × 2 个生成模型）的信号评估，按全样本与题型分层。
+"""Signal evaluation on the scale-up data (2,400 questions x 2 generator models), stratified by full sample and item type.
 
-修正 analyze_exp.py 的崩溃（C+H=0 时符号检验返回 None），并补上 eta_adj 与题型拆分。
+Fixes the crash in analyze_exp.py (sign test returns None when C+H=0), and adds eta_adj and item-type splits.
 """
 import json, random, collections, math, os
 
@@ -153,11 +153,11 @@ def twoof3(p):
 
 
 GROUPS = {
-    "全样本": pools,
+    "ALL": pools,
     "GSM8K": [p for p in pools if p["qid"].startswith("gsm")],
     "CSQA": [p for p in pools if p["qid"].startswith("csqa")],
-    "granite 生成": [p for p in pools if p["model"] == "granite"],
-    "phi 生成": [p for p in pools if p["model"] == "phi"],
+    "granite gen": [p for p in pools if p["model"] == "granite"],
+    "phi gen": [p for p in pools if p["model"] == "phi"],
 }
 for gname, sub in GROUPS.items():
     print(f"\n=== {gname}  pools={len(sub)}  competing={sum(1 for p in sub if len(p['counts'])>=2)}")

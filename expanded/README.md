@@ -5,94 +5,112 @@ repository and the table/figure mapping is the top-level `README.md`.
 
 ---
 
-# 跨族评分与保形过滤实验（2026-11-08）
+# Cross-family scoring and conformal filtering experiment (2026-11-08)
 
-## 目的
+## Purpose
 
-检验 §3.2 的保形证书在**信号更强**时是否能用：把判决单元从 24 次 `W64` 改写扩大到 209 个竞争池，比较四种评分信号的判别力与纠错–致错平衡。
+Test whether the conformal certificate from §3.2 is usable when the **signal is stronger**:
+expand the decision unit from 24 `W64` rewrites to 209 competition pools, and compare the
+discriminative power and the correct-fix vs. harm trade-off of four scoring signals.
 
-## 环境
+## Environment
 
-- 采集主机：单卡 V100-32GB，214 GB 内存
-- 推理：llama.cpp `llama-server`（e9_runtime 内置），OpenAI 兼容接口
-- 模型：`Phi-3-mini-4k-instruct-q4`、`qwen2.5-14b-instruct-q5_k_m`（均为服务器已有权重）
-- 题面：`openai/gsm8k` test split、`tau/commonsense_qa` validation，经 hf-mirror 下载
+- Collection host: single V100-32GB, 214 GB RAM
+- Inference: llama.cpp `llama-server` (bundled in e9_runtime), OpenAI-compatible API
+- Models: `Phi-3-mini-4k-instruct-q4`, `qwen2.5-14b-instruct-q5_k_m` (both weights already present on the server)
+- Items: `openai/gsm8k` test split, `tau/commonsense_qa` validation, downloaded via hf-mirror
 
-## 数据
+## Data
 
-- 判决单元：`certificate_pool_ledger.json` 中 209 个竞争池（600 题 × 3 个托管模型）
-- 候选答案：直接取自账本的 `counts`（7 条路径的解析结果），未重新生成
-- 题号映射：`gsm8k-test-<i>` → test split 第 i 行；`csqa-<32hex>` → CommonsenseQA validation 的 `id`
-- 校验：2,048 个（记录, 候选类）任务，题面缺失 0，金标不符 0
+- Decision unit: 209 competition pools in `certificate_pool_ledger.json` (600 questions x 3 hosted models)
+- Candidate answers: taken directly from the ledger's `counts` (parsed results of 7 paths), not regenerated
+- Question-id mapping: `gsm8k-test-<i>` -> i-th row of test split; `csqa-<32hex>` -> `id` of CommonsenseQA validation
+- Validation: 2,048 (record, candidate class) tasks, 0 missing item text, 0 gold mismatches
 
-## 四种信号
+## Four signals
 
-| 信号 | 构造 |
+| Signal | Construction |
 |---|---|
-| 自评置信度 | 账本中每条路径的自评分数，按簇取均值 |
-| Phi-3-mini judge | 题目 + 候选答案 → 0–100 概率 |
-| Qwen2.5-14B judge | 同上 |
-| Qwen2.5-14B solver | 模型独立解题，信号为「其答案 = 候选答案」 |
+| Self-confidence | Per-path self-score in ledger, averaged within cluster |
+| Phi-3-mini judge | Question + candidate answer -> 0-100 probability |
+| Qwen2.5-14B judge | Same as above |
+| Qwen2.5-14B solver | Model solves independently; signal is "its answer == candidate answer" |
 
-判决规则：改判给分数最高的非多数簇，当且仅当该簇分数高于多数簇。
+Decision rule: reassign to the highest-scoring non-majority cluster iff its score exceeds the majority cluster's.
 
-## 结果
+## Results
 
-| 信号 | AUC | 改判 | 纠正 C | 损害 H | η | 95% CI | 符号检验 p |
+| Signal | AUC | Reassign | Corrected C | Harmed H | eta | 95% CI | sign test p |
 |---|---:|---:|---:|---:|---:|---|---:|
-| 自评置信度 | 0.572 | 69 | 20 | 40 | 0.50 | [0.25, 0.90] | 0.013 |
+| Self-confidence | 0.572 | 69 | 20 | 40 | 0.50 | [0.25, 0.90] | 0.013 |
 | Phi-3-mini judge | 0.598 | 36 | 10 | 16 | 0.62 | [0.21, 1.50] | 0.33 |
 | Qwen2.5-14B judge | 0.688 | 56 | 23 | 27 | 0.85 | [0.41, 1.75] | 0.67 |
 | Qwen2.5-14B solver | 0.671 | 59 | 25 | 29 | 0.86 | [0.42, 1.75] | 0.68 |
 | R1-Distill-7B solver | 0.573 | 54 | 16 | 33 | 0.48 | [0.21, 0.95] | 0.021 |
 | judge ∧ solver | — | 28 | 15 | 11 | 1.36 | [0.50, 4.60] | 0.56 |
 | qwen solver ∧ r1 solver | — | 21 | 11 | 9 | 1.22 | [0.38, 4.67] | 0.82 |
-| 三信号中两者一致 | — | 31 | 19 | 11 | 1.73 | [0.71, 6.00] | 0.20 |
+| two-of-three signals agree | — | 31 | 19 | 11 | 1.73 | [0.71, 6.00] | 0.20 |
 
-上限：55 个池可被修正，135 个池存在损害风险。
+Upper bound: 55 pools can be corrected, 135 pools carry harm risk.
 
-**保形覆盖**（按题 5 折交叉拟合，仅计候选池含正确类的记录）：自评 0.958 / 0.902 / 0.815（α = 0.05 / 0.10 / 0.20）；Qwen judge 0.950 / 0.946 / 0.946。全部达到名义值。
+**Conformal coverage** (5-fold cross-fit by question, counting only records whose candidate pool
+contains the correct class): self-confidence 0.958 / 0.902 / 0.815 (alpha = 0.05 / 0.10 / 0.20);
+Qwen judge 0.950 / 0.946 / 0.946. All reach the nominal level.
 
-**证书对选择性的边际贡献为零**：把「分数比较」与「挑战者通过证书」取交集后，Phi 与 Qwen 的 η 不变（0.62、0.85），因为分数在 100 附近饱和，几乎所有挑战者都被认证。
+**The certificate's marginal contribution to selectivity is zero**: intersecting "score comparison"
+with "challenger passes certificate" leaves Phi and Qwen's eta unchanged (0.62, 0.85), because scores
+saturate near 100 and almost all challengers get certified.
 
-## 结论
+## Conclusions
 
-- 自评置信度的改写是**显著有害**的（η = 0.50，p = 0.013）。
-- 换用跨族评分器把 η 提高约一倍（0.50 → 0.85），与判别力单调相关，但仍低于 1。
-- 两个独立信号同时同意时 η = 1.36，是唯一越过 1 的配置，但区间 [0.50, 4.60]、p = 0.56，尚未确立。
-- 保形证书本身成立（覆盖率达标），但选择性的瓶颈在信号，不在界。
+- Self-confidence rewriting is **significantly harmful** (eta = 0.50, p = 0.013).
+- Switching to a cross-family scorer roughly doubles eta (0.50 -> 0.85), monotonically tied to
+  discriminative power, but still below 1.
+- When two independent signals agree simultaneously eta = 1.36, the only configuration above 1, but
+  the interval [0.50, 4.60], p = 0.56, is not yet established.
+- The conformal certificate itself holds (coverage target met), but the selectivity bottleneck is the
+  signal, not the bound.
 
-## 文件
+## Files
 
-- `out/scores_phi.jsonl`、`out/scores_qwen14b.jsonl`：候选答案打分
-- `out/solve_qwen14b.jsonl`：独立解题结果
-- `out/summary.json`：汇总
-- `scripts/`：建任务、打分、分析与汇总脚本
+- `out/scores_phi.jsonl`, `out/scores_qwen14b.jsonl`: candidate answer scoring
+- `out/solve_qwen14b.jsonl`: independent solving results
+- `out/summary.json`: summary
+- `scripts/`: task-building, scoring, analysis, and summary scripts
 
-## R1-Distill 的故障与修复
+## R1-Distill failure and fix
 
-首次运行时 2,048 条打分全部无法解析。原因不是模型不可用，而是它作为推理模型会先输出 `reasoning_content`，在 `max_tokens=16` 下 `content` 恒为空；放开上限后它又直接解题而不做评判。
+On first run, all 2,048 scoring entries failed to parse. The cause was not an unusable model: as a
+reasoning model it first emits `reasoning_content`, and under `max_tokens=16` the `content` is always
+empty; once the cap was lifted it solved the problem directly instead of judging.
 
-修复方式：不再把它当裁判，改作**独立解题器**——`max_tokens=1024`，先后备字段（`content` 为空时回退 `reasoning_content`），解析 `Proposed answer:` 加多级回退正则。600 题全部跑通，25 条空结果（4.2%），GSM8K 自身准确率 80.7%。
+Fix: stop treating it as a judge and instead use it as an **independent solver** -- `max_tokens=1024`,
+with fallback to the backup field (`reasoning_content` when `content` is empty), parsing
+`Proposed answer:` plus a multi-level fallback regex. All 600 questions ran through, 25 empty results
+(4.2%), GSM8K standalone accuracy 80.7%.
 
-结论：单独使用时 R1-Distill 信号并不优于自评置信度（AUC 0.573，η 0.48，p = 0.021，显著有害）；但与 Qwen 解题器合取时 η = 1.22，与 judge∧solver 的 1.36 同向，且两者无共同训练谱系。
+Conclusion: used alone, the R1-Distill signal is no better than self-confidence (AUC 0.573, eta 0.48,
+p = 0.021, significantly harmful); but conjoined with the Qwen solver eta = 1.22, same direction as
+judge∧solver's 1.36, and the two share no common training lineage.
 
-## 扩容实验
+## Scale-up experiment
 
-- 题量：GSM8K 1,200 + CommonsenseQA 1,200 = 2,400 题（原 600 题的 4 倍）
-- 生成器：granite-3.3-2b、Phi-3-mini-4k，各 7 条路径 + 逐路径置信度
-- 规模：16,800 × 2 条序列
-- 落盘：`out/gen_granite_1200.jsonl`、`out/gen_phi_1200.jsonl`
+- Volume: GSM8K 1,200 + CommonsenseQA 1,200 = 2,400 questions (4x the original 600)
+- Generators: granite-3.3-2b, Phi-3-mini-4k, each 7 paths + per-path confidence
+- Scale: 16,800 x 2 sequences
+- Written to disk: `out/gen_granite_1200.jsonl`, `out/gen_phi_1200.jsonl`
 
-## 第五信号：DeepSeek API（2026-11-08 完成）
+## Fifth signal: DeepSeek API (completed 2026-11-08)
 
-用 `deepseek-chat` 与 `deepseek-reasoner` 两个请求配置，各跑评判与独立解题。两者由供应商解析为同一模型
-DeepSeek-V4.1-Flash（标识符 `deepseek-flash`），分别对应非思考与思考模式。下表标签已按模型名统一为
-「DeepSeek … (non-thinking) / (thinking)」；题面与本地信号完全一致（`tasks.jsonl`，2,048 个候选打分任务 / 600 道题）。
+Two request configs, `deepseek-chat` and `deepseek-reasoner`, each used for judging and independent
+solving. The vendor resolves both to the same model, DeepSeek-V4.1-Flash (identifier `deepseek-flash`),
+corresponding to the non-thinking and thinking modes respectively. The table labels below have been
+unified to the model name as "DeepSeek ... (non-thinking) / (thinking)"; the item text is identical to
+the local signals (`tasks.jsonl`, 2,048 candidate-scoring tasks / 600 questions).
 
-| 信号 | 候选级 AUC | 打 100 比例 | 改判 | 纠正 C | 损害 H | η | η_adj | 95% CI | 符号 p |
+| Signal | candidate AUC | % scored 100 | Reassign | Corrected C | Harmed H | eta | eta_adj | 95% CI | sign p |
 |---|---:|---:|---:|---:|---:|---:|---:|---|---:|
-| 自评置信度 | — | — | 69 | 20 | 40 | 0.50 | 0.25 | [0.25, 0.90] | 0.013 |
+| Self-confidence | — | — | 69 | 20 | 40 | 0.50 | 0.25 | [0.25, 0.90] | 0.013 |
 | Phi-3-mini judge | 0.621 | 28.0% | 36 | 10 | 16 | 0.62 | 0.31 | [0.21, 1.50] | 0.33 |
 | Qwen2.5-14B judge | 0.669 | 0.2% | 56 | 23 | 27 | 0.85 | 0.43 | [0.41, 1.75] | 0.67 |
 | Qwen2.5-14B solver | — | — | 59 | 25 | 29 | 0.86 | 0.43 | [0.42, 1.75] | 0.68 |
@@ -100,45 +118,63 @@ DeepSeek-V4.1-Flash（标识符 `deepseek-flash`），分别对应非思考与�
 | DeepSeek solver (non-thinking) | — | — | 48 | 18 | 23 | 0.78 | 0.39 | [0.34, 1.62] | 0.53 |
 | DeepSeek judge (thinking) | **0.855** | 76.3% | 47 | 22 | 18 | **1.22** | 0.61 | [0.58, 2.45] | 0.64 |
 | DeepSeek solver (thinking) | — | — | 41 | 19 | 14 | 1.36 | 0.68 | [0.58, 4.14] | 0.49 |
-| Qwen∧DeepSeek 解题器（非思考） | — | — | 21 | 13 | 6 | 2.17 | **1.08** | [0.71, 10.0] | 0.17 |
-| Qwen∧DeepSeek 解题器（思考） | — | — | 17 | 10 | 5 | 2.00 | **1.00** | [0.60, 12.0] | 0.30 |
+| Qwen∧DeepSeek solver (non-thinking) | — | — | 21 | 13 | 6 | 2.17 | **1.08** | [0.71, 10.0] | 0.17 |
+| Qwen∧DeepSeek solver (thinking) | — | — | 17 | 10 | 5 | 2.00 | **1.00** | [0.60, 12.0] | 0.30 |
 
-三条结论：
+Three conclusions:
 
-1. **判别力与决策效用脱钩**。思考模式评判的候选级 AUC 0.855，是全部十个信号里最高的，但 76.3% 的候选被打 100 分，只能改判 47 次、η 仅 1.22。打分排序好，不等于能当开关。
-2. **饱和是模型行为，不是题面呈现**。CSQA 候选只给字母时 96.0% 打 100；补上选项原文仍有 95.3%。非思考模式在算式题上 AUC 0.712、多选上 0.553，题型差异是主因。
-3. **唯一稳定越过 η_adj = 1.0 的仍是双解题器合取**（1.08 / 1.00），但区间 [0.71, 10.0]、p = 0.17，样本量 21 次改判，只能算方向性证据。
+1. **Discriminative power and decision utility are decoupled**. The thinking-mode judge's candidate-level
+   AUC 0.855 is the highest of all ten signals, yet 76.3% of candidates are scored 100, allowing only 47
+   reassignments with eta just 1.22. Good ranking is not the same as being usable as a switch.
+2. **Saturation is model behavior, not item presentation**. CSQA candidates given only the letter are
+   scored 100 96.0% of the time; adding the option text still yields 95.3%. The non-thinking mode scores
+   AUC 0.712 on arithmetic items and 0.553 on multiple-choice; the item-type difference is the main cause.
+3. **The only configuration stably above eta_adj = 1.0 remains the dual-solver conjunction** (1.08 / 1.00),
+   but the interval [0.71, 10.0], p = 0.17, with a sample of 21 reassignments, is only directional evidence.
 
-### 解题器能力与令牌预算
+### Solver capability and token budget
 
-400 tokens 截断会把非思考解题器的 GSM8K 准确率压到 86.0%；放宽到 1500 后回到 88.7%，单独探测子集（n=300）为 93.3%。思考模式解题器在 4000 tokens 下 GSM8K 97.0%、CSQA 88.8%，是全套最强解题器。评判同样受截断影响：思考模式在 512 tokens 下有 214 条（10.4%）输出被推理耗尽、没有结论；放宽到 4096 补跑后空值降到 74 条。
+A 400-token cutoff pushes the non-thinking solver's GSM8K accuracy down to 86.0%; relaxing to 1500
+restores it to 88.7%, and the standalone probe subset (n=300) reaches 93.3%. The thinking-mode solver at
+4000 tokens reaches GSM8K 97.0%, CSQA 88.8%, the strongest solver in the whole set. Judging is likewise
+affected by truncation: at 512 tokens the thinking mode produced 214 entries (10.4%) whose output was
+exhausted by reasoning with no conclusion; relaxing to 4096 and re-running dropped the empty count to 74.
 
-### 复现文件
+### Reproduction files
 
-- `scripts/dscore.py`：API 评判/解题，`DS_MODEL`、`DS_JUDGE_MT`、`DS_SOLVE_MT` 控制
-- `scripts/dbreak.py`：按 GSM8K / CSQA 拆分的信号对比
-- `scripts/dfinal.py`：含聚类自助 CI 与符号检验的汇总
-- `scripts/dprobe.py`：三项稳健性探针（令牌预算、提示措辞、选项呈现）
-- `out/scores_deepseek.jsonl`、`out/solve_deepseek1500.jsonl`、`out/scores_dsreasoner.jsonl`、`out/solve_dsreasoner.jsonl`
+- `scripts/dscore.py`: API judging/solving, controlled by `DS_MODEL`, `DS_JUDGE_MT`, `DS_SOLVE_MT`
+- `scripts/dbreak.py`: signal comparison split by GSM8K / CSQA
+- `scripts/dfinal.py`: summary with cluster-bootstrap CI and sign test
+- `scripts/dprobe.py`: three robustness probes (token budget, prompt wording, option presentation)
+- `out/scores_deepseek.jsonl`, `out/solve_deepseek1500.jsonl`, `out/scores_dsreasoner.jsonl`, `out/solve_dsreasoner.jsonl`
 - `out/deepseek_summary.json`
 
-## 参数量阶梯（2026-11-08 夜间启动）
+## Parameter-count ladder (launched night of 2026-11-08)
 
-目的：给 §5.8 的两点（2B granite、3.8B Phi）补第三个同构点 Qwen2.5-14B-Instruct，使"参数量无法内生拯救自评置信度"这句话有趋势而不是一条直线段。
+Purpose: add a third isomorphic point, Qwen2.5-14B-Instruct, to the two in §5.8 (2B granite, 3.8B Phi),
+so that "parameter count cannot endogenously rescue self-confidence" shows a trend rather than a single
+straight line segment.
 
-- 设计：同样 2,400 题（1,200 GSM8K + 1,200 CSQA）、每题 7 条路径、temperature 1、512 token 上限、逐路径自评置信度，与 granite/Phi 完全同构
-- 输出：`out/gen_qwen14b_1200.jsonl`（16,800 条）
-- 吞吐：实测 0.53 条/秒，全程 8 小时 10 分（14B q5 在 V100 上约 150 token/秒聚合）
-- 收尾：生成完成后运行 `scripts/ladder.py`，写 `out/ladder.txt`
-- **结果**（`out/ladder.txt`，16,800 条全部可解析）：
+- Design: same 2,400 questions (1,200 GSM8K + 1,200 CSQA), 7 paths per question, temperature 1, 512 token
+  cap, per-path self-confidence, fully isomorphic to granite/Phi
+- Output: `out/gen_qwen14b_1200.jsonl` (16,800 entries)
+- Throughput: measured 0.53 entries/sec, total 8 hours 10 minutes (14B q5 aggregates ~150 tokens/sec on V100)
+- Wrap-up: after generation completes, run `scripts/ladder.py`, which writes `out/ladder.txt`
+- **Result** (`out/ladder.txt`, all 16,800 entries parseable):
 
-| 生成器 | 参数量 | 竞争池 | 多数票正确 | 改判 | C | H | η | η_adj | AUC |
+| Generator | Params | Competition pool | Majority-correct | Reassign | C | H | eta | eta_adj | AUC |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Granite-3.3-2B | 2B | 1,391 | 54.5% | 36 | 0 | 23 | 0.00 | 0.00 | 0.513 |
 | Phi-3-mini-4k | 3.8B | 1,153 | 62.8% | 418 | 81 | 263 | 0.31 | 0.15 | 0.585 |
 | Qwen2.5-14B-Instruct | 14B | 439 | 63.6% | 103 | 31 | 55 | 0.56 | 0.28 | 0.647 |
 
-- 判读：η 随规模单调上升（0.00 → 0.31 → 0.56），但增幅递减（+0.31、+0.25），14B 仍只有 0.28 的 η_adj，距 1.0 差 3.5 倍。竞争池数量随规模下降 3 倍，说明部分改善来自“可纠正的机会变少”。
-- 该表已并入正文 §5.3（Table 3）
+- Interpretation: eta rises monotonically with scale (0.00 -> 0.31 -> 0.56), but the increment shrinks
+  (+0.31, +0.25); 14B still has only eta_adj 0.28, 3.5x short of 1.0. The number of competition pools
+  falls 3x with scale, showing part of the improvement comes from "fewer corrigible opportunities".
+- This table has been merged into the main text §5.3 (Table 3)
 
-**警告**：`build_expand.py` 用 `glob("out/gen_*_1200.jsonl")` 建池。14B 生成完成后若再跑 `build_expand.py`，`pools_expanded.json` 会变成 7,200 池的三模型版本，§5.8 现有全部数字随之改变。阶梯分析刻意只读 gen 文件、不改 `pools_expanded.json`，两者互不干扰。若要升级主表为三模型，需同步更新摘要、§5.8、Table 6 与 Figure 5。
+**Warning**: `build_expand.py` builds pools with `glob("out/gen_*_1200.jsonl")`. If `build_expand.py`
+is re-run after the 14B generation completes, `pools_expanded.json` becomes a 7,200-pool three-model
+version, and all numbers in existing §5.8 change accordingly. The ladder analysis deliberately only
+reads the gen files and does not modify `pools_expanded.json`, so the two do not interfere. To upgrade
+the main table to three models, you must synchronously update the summary, §5.8, Table 6, and Figure 5.

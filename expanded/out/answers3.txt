@@ -1,0 +1,15 @@
+== A. alpha=0.10 coverage (question-clustered bootstrap, 5000 reps)
+dataset/signal                       nrec    nq    coverage    miscover          95%CI    halfW
+orig 600q / self                   1732   592   0.901   0.099 [0.883,0.920]  1.85pp
+scale-up / self                    4198  2277   0.951   0.049 [0.944,0.958]  0.67pp
+scale-up / Qwen judge              4235  2286   0.949   0.051 [0.940,0.958]  0.88pp
+
+== B. N=3/5/7 path scan (scale-up, take first N paths and recompute)
+ N      pool    comp    majok    sw    C    H    eta
+ 3  4800   1839     46.8%   198   65   84   0.77
+ 5  4800   2295     54.2%   383   93  206   0.45
+ 7  4800   2544     57.9%   457   83  283   0.29
+
+== C. Generator parameter count vs self-confidence (scale-up, N=7)
+  granite  2B    pool=2400 comp=1391 majok=54.5% sw=36 C=0 H=23 eta=0.00
+  phi      3.8B  pool=2400 comp=1153 majok=62.8% sw=418 C=81 H=263 eta=0.31

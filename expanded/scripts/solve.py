@@ -1,6 +1,6 @@
 import os
 # -*- coding: utf-8 -*-
-"""让评分模型独立解题，作为第三种信号（与候选答案是否一致）。"""
+"""Have the scoring model solve independently, as a third signal (whether it agrees with the candidate answer)."""
 import json, re, os, sys, time, threading, requests
 from concurrent.futures import ThreadPoolExecutor
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

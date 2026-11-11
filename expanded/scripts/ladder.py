@@ -1,9 +1,10 @@
 import os
 # -*- coding: utf-8 -*-
-"""生成器参数量阶梯：granite-2B / Phi-3.8B / Qwen-14B，同一 2,400 题、7 条路径、同一套
-建池与自评置信度改判规则。
+"""Generator parameter-count ladder: granite-2B / Phi-3.8B / Qwen-14B, same 2,400 questions, 7 paths, same
+pool-building and self-confidence reassignment rules.
 
-只读 gen_*_1200.jsonl，不重写 pools_expanded.json，因此不影响 §5.8 现有的两模型结果。
+Reads only gen_*_1200.jsonl and does not rewrite pools_expanded.json, so it does not affect the existing
+two-model results in §5.8.
 """
 import json, glob, os, collections, math
 
@@ -90,7 +91,7 @@ out = []
 for tag, size in MODELS:
     p = f"{BASE}/out/gen_{tag}_1200.jsonl"
     if not os.path.exists(p):
-        print(f"{tag:10s} {size:>5s}   (尚未生成)")
+        print(f"{tag:10s} {size:>5s}   (not yet generated)")
         continue
     r = evaluate(build_pools(load_model(tag)))
     out.append(dict(model=tag, size=size, **r))

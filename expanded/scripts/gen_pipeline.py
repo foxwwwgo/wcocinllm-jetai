@@ -1,8 +1,8 @@
 import os
 # -*- coding: utf-8 -*-
-"""扩展样本：每题 N 条路径生成 + 逐路径置信度。可断点续跑。
+"""Expanded sample: N-path generation per question + per-path confidence. Resumable.
 
-用法: python gen_pipeline.py <port> <model_tag> <n_questions> <workers>
+Usage: python gen_pipeline.py <port> <model_tag> <n_questions> <workers>
 """
 import json, os, re, sys, time, threading, requests
 from concurrent.futures import ThreadPoolExecutor

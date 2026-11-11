@@ -1,6 +1,6 @@
 import os
 # -*- coding: utf-8 -*-
-"""保形过滤：在 209 个竞争池上，按题 5 折交叉拟合，比较三种信号。"""
+"""Conformal filtering: across 209 competition pools, 5-fold cross-fit by question, compare three signals."""
 import json, math, random, collections
 
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

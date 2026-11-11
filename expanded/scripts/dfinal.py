@@ -1,13 +1,15 @@
 import os
 # -*- coding: utf-8 -*-
-"""加入 DeepSeek non-thinking API 作为跨族第五信号（评判 + 独立解题）。
+"""Add the DeepSeek non-thinking API as the fifth cross-family signal (judge + independent solver).
 
-报告三类量：
-  1) 池级判决指标（与 final.py 同规则）：改判数、纠正 C、损害 H、eta、eta_adj、聚类自助 CI、符号检验 p
-  2) 候选级判别力：对全部（记录, 候选类）打分任务算 AUC（答案是否金标）
-  3) 饱和率：打分为 100 的候选占比——解释为何高分评判器无法改判
+Reports three classes of quantities:
+  1) Pool-level decision metrics (same rules as final.py): reassignments, corrected C, harmed H, eta,
+     eta_adj, clustered-bootstrap CI, sign-test p
+  2) Candidate-level discriminative power: AUC over all (record, candidate class) scoring tasks
+     (whether the answer is gold)
+  3) Saturation rate: fraction of candidates scored 100 -- explains why high-scoring judges cannot reassign
 
-eta_adj = C / (C_harm * H)，C_harm = 2.0。
+eta_adj = C / (C_harm * H), C_harm = 2.0.
 """
 import json, random, collections, math
 
@@ -72,7 +74,7 @@ def auc(pos, neg):
 
 
 def cand_auc(scored, keys):
-    """候选级 AUC：分数对「该候选是否为金标」的判别力。"""
+    """Candidate-level AUC: how well the score discriminates whether this candidate is gold."""
     pos = [scored[k] for k in keys if k in scored and gold.get(k)]
     neg = [scored[k] for k in keys if k in scored and not gold.get(k)]
     return auc(pos, neg)

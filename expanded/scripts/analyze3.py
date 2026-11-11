@@ -1,7 +1,7 @@
 import os
 BASE = os.environ.get("EXP_BASE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # -*- coding: utf-8 -*-
-"""以「相对多数簇的分数差」为不合度分数的保形过滤。"""
+"""Conformal filtering with the score difference of the plurality cluster as the nonconformity score."""
 import json, math, random, collections
 exec(open(f"{BASE}/scripts/analyze2.py").read().split("def qhat")[0])
 qs = sorted({r["id"] for r in ledger})

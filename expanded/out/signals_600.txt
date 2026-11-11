@@ -1,0 +1,13 @@
+signal                                          AUC* candAUC  sat%   sw   C   H   eta eta_adj          95%CI      p
+self-confidence                                    -       -     -   69  20  40  0.50    0.25    [0.25, 0.9]  0.013
+Phi-3-mini judge                                   -   0.621  28.0   36  10  16  0.62    0.31    [0.21, 1.5]  0.327
+Qwen2.5-14B judge                                  -   0.669   0.2   56  23  27  0.85    0.43   [0.41, 1.75]  0.672
+Qwen2.5-14B solver                                 -       -     -   59  25  29  0.86    0.43   [0.42, 1.75]  0.683
+DeepSeek judge (non-thinking)                      -   0.543  64.5    8   1   2  0.50    0.25     [0.0, 3.0]  1.000
+DeepSeek solver (non-thinking)                     -       -     -   48  18  23  0.78    0.39   [0.34, 1.62]  0.533
+DeepSeek judge (thinking)                          -   0.855  76.3   47  22  18  1.22    0.61   [0.58, 2.45]  0.636
+DeepSeek solver (thinking)                         -       -     -   41  19  14  1.36    0.68   [0.58, 4.14]  0.487
+Qwen solver & DeepSeek solver (non-thinking)       -       -     -   21  13   6  2.17    1.08   [0.71, 10.0]  0.167
+Qwen solver & DeepSeek solver (thinking)           -       -     -   17  10   5  2.00    1.00    [0.6, 12.0]  0.302
+
+written out/deepseek_summary.json

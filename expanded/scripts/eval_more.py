@@ -49,7 +49,7 @@ def j_r1(r):
     v,k=max(alt)
     if v>s[r["majority"]] and not ag(R1,r,r["majority"]): return (k,1)
     return (r["majority"],0)
-# 三者中至少两个一致
+# at least two of the three agree
 def vote2of3(r, third=R1):
     s=ext(r)
     if not s: return None

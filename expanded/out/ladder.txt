@@ -1,0 +1,6 @@
+generator   size  pools competing majority acc   sw    C    H    eta eta_adj    AUC
+granite       2B   2400      1391        54.5%   36    0   23   0.00    0.00  0.513
+phi         3.8B   2400      1153        62.8%  418   81  263   0.31    0.15  0.585
+qwen14b      14B   2400       439        63.6%  103   31   55   0.56    0.28  0.647
+
+written out/ladder.json

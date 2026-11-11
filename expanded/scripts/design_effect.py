@@ -1,9 +1,11 @@
 import os
 # -*- coding: utf-8 -*-
-"""设计效应：同一套改判事件，聚类自助与记录级 i.i.d. 自助给出的 η 区间宽度之比。
+"""Design effect: for the same set of reassignment events, the ratio of eta interval widths from
+clustered bootstrap vs record-level i.i.d. bootstrap.
 
-论文原句是「i.i.d. 自助让区间虚假收窄约 16%（宽 0.55 对 0.66）」。
-这里在扩容集（m=2）上重算同一量，检验收窄比例是否随 m 下降。
+The paper's original claim is "i.i.d. bootstrap falsely narrows the interval by ~16% (0.55 vs 0.66)".
+Here we recompute the same quantity on the scale-up set (m=2) to test whether the narrowing ratio
+drops as m decreases.
 """
 import json, random, collections
 
@@ -87,8 +89,8 @@ def width(sw, draws=5000, seed=11):
     return C, H, wc, (lc, uc), wi, (li, ui)
 
 
-print(f"{'数据集':16s} {'C':>4s} {'H':>4s} {'eta':>5s}  聚类区间宽  记录级区间宽  收窄")
-for label, sw in (("原 600 题 m=3", switches_from_ledger()), ("扩容 m=2", switches_from_pools())):
+print(f"{'dataset':16s} {'C':>4s} {'H':>4s} {'eta':>5s}  clustered width  record-level width  narrowing")
+for label, sw in (("orig 600q m=3", switches_from_ledger()), ("scale-up m=2", switches_from_pools())):
     C, H, wc, ci, wi, ii = width(sw)
     print(f"{label:16s} {C:4d} {H:4d} {C/H:5.2f}  {wc:8.2f} [{ci[0]:.2f},{ci[1]:.2f}]  "
           f"{wi:8.2f} [{ii[0]:.2f},{ii[1]:.2f}]  {100*(1-wi/wc):5.1f}%")

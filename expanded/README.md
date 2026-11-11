@@ -5,7 +5,7 @@ repository and the table/figure mapping is the top-level `README.md`.
 
 ---
 
-# Cross-family scoring and conformal filtering experiment (2026-11-08)
+# Cross-family scoring and conformal filtering experiment 
 
 ## Purpose
 
@@ -100,7 +100,7 @@ judge∧solver's 1.36, and the two share no common training lineage.
 - Scale: 16,800 x 2 sequences
 - Written to disk: `out/gen_granite_1200.jsonl`, `out/gen_phi_1200.jsonl`
 
-## Fifth signal: DeepSeek API (completed 2026-11-08)
+## Fifth signal: DeepSeek API 
 
 Two request configs, `deepseek-chat` and `deepseek-reasoner`, each used for judging and independent
 solving. The vendor resolves both to the same model, DeepSeek-V4.1-Flash (identifier `deepseek-flash`),
@@ -149,7 +149,7 @@ exhausted by reasoning with no conclusion; relaxing to 4096 and re-running dropp
 - `out/scores_deepseek.jsonl`, `out/solve_deepseek1500.jsonl`, `out/scores_dsreasoner.jsonl`, `out/solve_dsreasoner.jsonl`
 - `out/deepseek_summary.json`
 
-## Parameter-count ladder (launched night of 2026-11-08)
+## Parameter-count ladder 
 
 Purpose: add a third isomorphic point, Qwen2.5-14B-Instruct, to the two in §5.8 (2B granite, 3.8B Phi),
 so that "parameter count cannot endogenously rescue self-confidence" shows a trend rather than a single
